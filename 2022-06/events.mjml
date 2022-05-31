@@ -1,0 +1,36 @@
+<!-- Intro -->
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="heading">
+      Check out our upcoming social events
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- Update 1 -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F278935389%2F200202755546%2F1%2Foriginal.20220505-010226?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C289%2C1080%2C540&s=d73ebef7c0f8fc70298c9f52f01924b0" href="https://www.eventbrite.com.au/e/pgcs-big-day-out-tickets-328546440247"></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="title">
+      PGC's Big Day Out
+    </mj-text>
+    <mj-text>
+  PGC's BIG DAY OUT is back on June 11th! Explore Sydney attractions and meet with other postgraduate peers in this half-day tour with sightseeing, food, fun and much more! Attractions include Paddy’s Market, Darling Harbour, Botanical Gardens, the Grounds of Alexandria, Little Bay, & Chinese Dinner. Limited seats are available and tickets include bus fare, a meal and emperors puff balls on us! <a href="https://www.eventbrite.com.au/e/pgcs-big-day-out-tickets-328546440247" style="color:#EA881D">Tickets on sale now</a>.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- Update 2 -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F283292999%2F307439946789%2F1%2Foriginal.20220512-033034?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C22%2C1920%2C960&s=ee059667510b168c143b305d1ddf439c" href="https://www.eventbrite.com.au/e/postgrad-fest-a-week-of-events-for-current-aspiring-postgrads-tickets-338531626207"></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="title">
+      Postgrad Fest 2022
+    </mj-text>
+    <mj-text>
+      Take the next step in your educational journey or take a break from your thesis studies and kick back with 2022 Postgrad Fest! We've got a lil something for everyone whether you're an aspiring postgrad student or elbow deep in your studies already. Come by campus TUE-FRI Week 3 for info, inspo, fun and more! For more information, check out the <a href="https://www.eventbrite.com.au/e/postgrad-fest-a-week-of-events-for-current-aspiring-postgrads-tickets-338531626207" style="color:#EA881D">Eventbrite page</a>.
+    </mj-text>
+  </mj-column>
+</mj-section>

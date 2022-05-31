@@ -1,0 +1,24 @@
+<!-- Intro -->
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="heading">
+      Updates from our PGC officers
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- Committee Update 1 -->
+<mj-section background-color="white">
+  <mj-column>
+    <!-- Title -->
+    <mj-text mj-class="title">
+     Research
+    </mj-text>
+    <!-- Content -->
+    <mj-text>
+      Funding available now through GRS for HDR Development and Research Training, apply <a href="https://unsw.sharepoint.com/sites/unswhdr/SitePages/HDR-Career-Development-and-Support-Funding.aspx" style="color:#EA881D">here</a>.
+      <br /><br />
+      Missed the GRS Academic Workshops? Recordings available <a href="https://unsw.sharepoint.com/sites/unswhdr/SitePages/Previous-Candidature-Workshops.aspx" style="color:#EA881D">here</a>!
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- Committee Update 2 -->
