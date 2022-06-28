@@ -1,0 +1,5 @@
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletters/main/assets/june-header.jpg" />
+  </mj-column>
+</mj-section>

@@ -1,0 +1,39 @@
+<!-- Begin intro -->
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="heading">
+      Check out our upcoming events
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End intro -->
+<!-- Begin update -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F306058539%2F200202755546%2F1%2Foriginal.20220620-234018?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1600%2C800&s=d51fa7445499a171adcce8ce4bbffab3" href="https://www.eventbrite.com.au/e/pgc-x-hkaba-career-development-workshop-tickets-370794966727"></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="title">
+      PGC x HKABA Career Development Workshop
+    </mj-text>
+    <mj-text>
+      The UNSW Postgraduate Council have partnered with the Hong Kong Australia Business Association (NSW Chapter) to bring you a bespoke workshop giving you practical tips to help you identify and reach your career goals. Refreshments and drinks will be served. <a href="https://www.eventbrite.com.au/e/pgc-x-hkaba-career-development-workshop-tickets-370794966727" style="color:#EA881D">Register for the workshop on Eventbrite.</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End update -->
+<!-- Begin update -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F307535949%2F200202755546%2F1%2Foriginal.20220623-060854?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=1%2C0%2C968%2C484&s=b68b0e8e15cb5240bd97b22aa249c95e" href="https://www.eventbrite.com.au/e/pgc-movie-night-at-the-ritz-tickets-372592733897"></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="title">
+      PGC Movie Night at the Ritz
+    </mj-text>
+    <mj-text>
+      On the 7th July from 5:30pm we will be hosting a movie night at the Ritz Cinemas in Randwick. Use the link to sign up and get tickets!! <a href="https://www.eventbrite.com.au/e/pgc-movie-night-at-the-ritz-tickets-372592733897" style="color:#EA881D"> Purchase your tickets on Eventbrite.</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End update -->

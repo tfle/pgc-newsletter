@@ -1,0 +1,12 @@
+<mj-section>
+  <mj-column>
+    <mj-text align="center" color="#A5B0B8">
+      Email not displaying correctly? View it on our <a href="https://www.arc.unsw.edu.au/pgc/newsletter" style="color:#a5b0b8">website</a>.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletters/main/assets/july-header.jpg" />
+  </mj-column>
+</mj-section>
