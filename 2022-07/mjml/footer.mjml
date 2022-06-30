@@ -8,6 +8,7 @@
       <mj-social-element name="linkedin-noshare" href="https://www.linkedin.com/company/unsw-postgraduate-council-pgc/" />
       <mj-social-element name="facebook-noshare" href="https://www.facebook.com/unswpgc" />
       <mj-social-element name="instagram-noshare" href="https://www.instagram.com/unswpgc/" />
+      <mj-social-element name="web-noshare" href="https://www.arc.unsw.edu.au/pgc"  />
     </mj-social>
   </mj-column>
 </mj-section>

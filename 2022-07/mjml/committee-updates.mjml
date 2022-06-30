@@ -10,57 +10,47 @@
 <mj-section background-color="white">
   <mj-column>
     <!-- Title -->
-    <mj-text mj-class="title">
-     Research
-    </mj-text>
+    <mj-text mj-class="title">🔬 Research</mj-text>
     <!-- Content -->
     <mj-text>
-      Did you know UNSW library offers subject guides for 21 different areas? From education to medicine or social sciences, there’s something for every student. Explore the subject guides here: <a href="https://subjectguides.library.unsw.edu.au/subjectguides" style="color:#EA881D">https://subjectguides.library.unsw.edu.au/subjectguides</a>
+      Did you know UNSW library offers subject guides for 21 different areas? From education to medicine or social sciences, there’s something for every student. <a href="https://subjectguides.library.unsw.edu.au/subjectguides">Explore the subject guides.</a>
     </mj-text>
     <mj-text>
-      Recordings and slides from all our Postgraduate Week workshops <a href="https://arcunsw.sharepoint.com/Transfer/Shared%20Documents/Forms/AllItems.aspx?id=%2FTransfer%2FShared%20Documents%2F1%2E%20Digital%20Assets%20%2D%20Transfer%2F2022%2FPGC%2FPostgrad%20Fest%2FPGF%20Event%20Recordings&p=true&ct=1656043561641&or=OWA%2DNT&cid=40cf621c%2D04e7%2D5406%2D86b2%2D39bf5139bf11&ga=1  
-" style="color:#EA881D">can be found here</a>. Thanks everyone for coming! 
+      Recordings and slides from all our Postgraduate Week workshops <a href="https://arcunsw.sharepoint.com/Transfer/Shared%20Documents/Forms/AllItems.aspx?id=%2FTransfer%2FShared%20Documents%2F1%2E%20Digital%20Assets%20%2D%20Transfer%2F2022%2FPGC%2FPostgrad%20Fest%2FPGF%20Event%20Recordings&p=true&ct=1656043561641&or=OWA%2DNT&cid=40cf621c%2D04e7%2D5406%2D86b2%2D39bf5139bf11&ga=1">can be found here</a>. Thanks everyone for coming! 
     </mj-text>
-    <mj-divider border-color="#EA881D" border-width="2px" border-style="solid"></mj-divider>
   </mj-column>
 </mj-section>
 <!-- Committee Update 2 -->
 <mj-section background-color="white">
   <mj-column>
     <!-- Title -->
-    <mj-text mj-class="title">
-     International
-    </mj-text>
+    <mj-text mj-class="title">🌏 International</mj-text>
     <!-- Content -->
     <mj-text>
-      The PGC international office is calling for expressions of interest to fill the position of International Committee Liaison. If you are an international student, a current member of Arc @ UNSW, and you are thrilled to enrich yours and other’s experiences at UNSW, please apply here:
-<a href="https://www.arc.unsw.edu.au/pgc/vacant-positions-1" style="color:#EA881D">https://www.arc.unsw.edu.au/pgc/vacant-positions-1</a>
+      The PGC international office is calling for expressions of interest to fill the position of International Committee Liaison. If you are an international student, a current member of Arc @ UNSW, and you are thrilled to enrich yours and other’s experiences at UNSW,
+<a href="https://www.arc.unsw.edu.au/pgc/vacant-positions-1">please apply here.</a>
     </mj-text>
     <mj-text>    
-Our brochure for UNSW International Postgraduate Students is now available online for download. Find all services and programs tailored to your needs as an international student to elevate your experience at UNSW. <a href="https://unsw.sharepoint.com/:b:/s/PGC2022/ERzdOY7LU7pMoUm-IxifMYoB1yjqxvNmuTQfbBYWvCqRog?e=c45GdU" style="color:#EA881D">Check out the brochure here.</a>
+Our brochure for UNSW International Postgraduate Students is now available online for download. Find all services and programs tailored to your needs as an international student to elevate your experience at UNSW. <a href="https://unsw.sharepoint.com/:b:/s/PGC2022/ERzdOY7LU7pMoUm-IxifMYoB1yjqxvNmuTQfbBYWvCqRog?e=c45GdU">Check out the brochure.</a>
     </mj-text>
-    <mj-divider border-color="#EA881D" border-width="2px" border-style="solid"></mj-divider>
   </mj-column>
 </mj-section>
 <!-- Committee Update 3 -->
 <mj-section background-color="white">
   <mj-column>
     <mj-text mj-class="title">
-     Equity
+      ⚖️ Equity
     </mj-text>
     <mj-text>
       Post-grad fest was a huge success with our Equity team collaborating with Arc to host 3 events: Post-grads and parenting, wine and cheese night, and a mental health panel.
     </mj-text>
-    <mj-divider border-color="#EA881D" border-width="2px" border-style="solid"></mj-divider>
   </mj-column>
 </mj-section>
 <!-- Committee Update -->
 <mj-section background-color="white">
   <mj-column>
     <!-- Title -->
-    <mj-text mj-class="title">
-     Canberra
-    </mj-text>
+    <mj-text mj-class="title">🇦🇺 Canberra</mj-text>
     <!-- Content -->
     <mj-text>
       From 15/12/2021-27/06/2022, there were roughly 400 postgraduate students with one student club, Arc Canberra. Due to the pandemic, many postgraduates intend to work from home, and up to 14 postgrads often attend the activity. With Arc Canberra's effort, there are many more postgrads engaging in the activities. As Canberra Campus Officer of PGC, my strategy is to raise awareness of the presence of PGC and strengthen the relationship between PGC Sydney and PGC Canberra. 
