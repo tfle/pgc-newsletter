@@ -1,7 +1,7 @@
 <mjml>
   <!-- Style and meta elements -->
   <mj-head>
-    <mj-font name="Questrial" href="https://fonts.googleapis.com/css?family=Questrial" />
+    <mj-font name="Questrial" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" />
     <mj-attributes>
       <mj-all font-family="Questrial" />
       <mj-text color="grey" />
