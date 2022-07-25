@@ -1,0 +1,25 @@
+<!-- Begin intro -->
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="heading">
+      Check out our upcoming events
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End intro -->
+<!-- Begin update -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-08/docx/NEWSLETTER%20July%202022.fld/image003.png"></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="title">
+      Cockatoo Island Trip
+    </mj-text>
+    <mj-text>
+      Interested in visiting Cockatoo Island and learning about the Island’s Convict Precinct for a discounted price of $5 per student (rrp $16)? Want to meet new postgraduate friends? Well you won’t want to miss out on our Cockatoo Island Trip! <br></br>
+Date: TBC (Will be on Facebook in a week)
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End update -->
