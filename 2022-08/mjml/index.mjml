@@ -4,12 +4,14 @@
     <mj-font name="Questrial" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" />
     <mj-attributes>
       <mj-all font-family="Questrial" />
-      <mj-text color="grey" />
+      <mj-text color="grey" font-size="14px" />
       <mj-class name="heading" font-size="20px" align="center" />
       <mj-class name="title" font-size="20px" color="#EA881D" />
     </mj-attributes>
     <mj-style>
-      a {color: #EA881D}
+      a {
+        color: #EA881D
+      }
     </mj-style>
   </mj-head>
   <!-- Email starting point -->

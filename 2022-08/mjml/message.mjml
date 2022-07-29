@@ -11,14 +11,40 @@
 <mj-section background-color="white">
   <mj-column>
     <mj-text font-style="italic">
-I would like to thank all who were involved in Postgrad Fest on a fantastic week. It was simply wonderful to meet so many postgrad students from across our wide network to meet, learn, and hear about all things academic, professional, and social within university life.<br></br>
+      I would like to thank all who were involved in Postgrad Fest on a fantastic week. It was simply wonderful to meet so many postgrad students from across our wide network to meet, learn, and hear about all things academic, professional, and social within university life.<br></br>
 
-Apart from our events, the PGC continues its efforts to advocate for the voice of the postgraduate student, including high level talks and advocacy for increasing RTP scholarships, and recently, advocating for a growth in the number of mental health clinicians operating within UNSW's mental health service provision. <br></br>
+      Apart from our events, the PGC continues its efforts to advocate for the voice of the postgraduate student, including high level talks and advocacy for increasing RTP scholarships, and recently, advocating for a growth in the number of mental health clinicians operating within UNSW's mental health service provision. <br></br>
 
-The Postgraduate Council is proud to be aligning and promoting the mission and ideal of the United Nations Sustainable Development Goals, affectionately termed the 'Global Goals'. The 17 aspirational objectives seek to create a better fairer and more sustainable world for all. <br></br>
+      The Postgraduate Council is proud to be aligning and promoting the mission and ideal of the United Nations Sustainable Development Goals, affectionately termed the 'Global Goals'. The 17 aspirational objectives seek to create a better fairer and more sustainable world for all. <br></br>
 
-If you aren't already, I certainly encourage you to follow us across our socials. And on a fun note, save the date for our iconic Postgraduate cruise on 15th October. 
+      If you aren't already, I certainly encourage you to follow us across our socials. And on a fun note, save the date for our iconic Postgraduate cruise on 15th October. <br></br>
+
+      Kindest regards,<br>
+      Josh
     </mj-text>
   </mj-column>
 </mj-section>
 <!-- End update -->
+<!-- Begin intro -->
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="heading">
+      2022 Postgraduate Council Elections
+    </mj-text>
+  </mj-column>
+</mj-section>
+<!-- End intro -->
+<!-- Begin update -->
+<mj-section background-color="white">
+  <mj-column>
+    <mj-divider border-width="2px" border-style="dotted" border-color="#EA881D" />
+    <mj-text align="center">
+      Nominations are now open to be <em>#PGC2023</em>.<br></br>
+      You can make a difference in the lives of students!
+    </mj-text>
+    <mj-button href="https://www.arc.unsw.edu.au/voice/elections-rules/pgc-elections-notice" background-color="#EA881D" font-size="16px" width="300px">
+      Nominate now!
+    </mj-button>
+    <mj-divider border-width="2px" border-style="dotted" border-color="#EA881D" />
+  </mj-column>
+</mj-section>

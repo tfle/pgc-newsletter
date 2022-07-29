@@ -14,12 +14,12 @@
     <!-- Content -->
     <mj-text>
       Arc PGC Research Awards 2022<br></br>
- 
-Know a fellow HDR candidate, supervisor, or professional staff who has done something above and beyond to improve the HDR experience at UNSW? Nominate them for the Arc PGC Research Awards!<br></br>
- 
-Nominations are open via an easy, one-question nomination form at <a href="https://unsw.to/PGCResearchAward2022">https://unsw.to/PGCResearchAward2022</a> (Closes 8 August 2022)<br></br>
- 
-The annual awards ceremony will be held in November, celebrating the contributions of outstanding HDR candidates, supervisors, and professional staff. All HDR candidates, supervisors and staff are eligible for nomination, and you are welcome to nominate more than one individual!
+
+      Know a fellow HDR candidate, supervisor, or professional staff who has done something above and beyond to improve the HDR experience at UNSW? Nominate them for the Arc PGC Research Awards!<br></br>
+
+      Nominations are open via an easy, one-question nomination form at <a href="https://unsw.to/PGCResearchAward2022">https://unsw.to/PGCResearchAward2022</a> (Closes 8 August 2022)<br></br>
+
+      The annual awards ceremony will be held in November, celebrating the contributions of outstanding HDR candidates, supervisors, and professional staff. All HDR candidates, supervisors and staff are eligible for nomination, and you are welcome to nominate more than one individual!
     </mj-text>
   </mj-column>
   <mj-column>
@@ -34,12 +34,12 @@ The annual awards ceremony will be held in November, celebrating the contributio
     <mj-text mj-class="title">📚 Coursework</mj-text>
     <!-- Content -->
     <mj-text>
- A series of events were held across campus throughout Stress-less Week, Monday 18th to Thursday 21st July.
-The Coursework office hosted a Coffee and Chat event at the Postgraduate Lounge on Tuesday 19th July, welcoming postgrads in a casual and relaxed environment. Postgrads were able to kick back and relax, meeting new friends while sharing stories and de-stressing. 
+      A series of events were held across campus throughout Stress-less Week, Monday 18th to Thursday 21st July.
+      The Coursework office hosted a Coffee and Chat event at the Postgraduate Lounge on Tuesday 19th July, welcoming postgrads in a casual and relaxed environment. Postgrads were able to kick back and relax, meeting new friends while sharing stories and de-stressing.
     </mj-text>
   </mj-column>
   <mj-column>
-  <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-08/docx/NEWSLETTER%20July%202022.fld/image002.png"></mj-image>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-08/docx/NEWSLETTER%20July%202022.fld/image002.png"></mj-image>
   </mj-column>
 </mj-section>
 
