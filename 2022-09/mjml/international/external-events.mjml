@@ -1,16 +1,19 @@
 <mj-section>
   <mj-column>
     <mj-text mj-class="subsection-title">
-      myEnglish Week
+      myEnglish Week Term 3
     </mj-text>
     <mj-text mj-class="subsection-content">
       <p>myEnglish Week is a free program to help you build your language confidence and succeed at UNSW. Designed and delivered by expert English Language and Academic Skills teachers, the program is full of useful and fun sessions. You can join every day or choose sessions most useful for you. Some sessions will be in person and some will be delivered online.</p>
     </mj-text>
   </mj-column>
   <mj-column>
-    <mj-image src=""></mj-image>
+    <mj-image src="https://cdn.filestackcontent.com/compress/output=format:webp/cache=expiry:max/resize=width:936/1PqR9MPrQxi2TWvaEaww"></mj-image>
     <mj-text mj-class="subsection-content">
+    <p>Mon 29th Aug 2022, 11:00 am - Fri 2nd Sep 2022, 3:00 pm AEST</p>
+    <p>
       <a href="https://events.humanitix.com/myenglish-week-term-3">Registration link</a>
+    </p>
     </mj-text>
   </mj-column>
 </mj-section>

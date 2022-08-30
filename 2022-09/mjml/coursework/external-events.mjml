@@ -13,12 +13,12 @@ No coding experience required – just bring a willingness to learn and curiosit
   </mj-column>
   <!-- Event image -->
   <mj-column>
-    <mj-image src=""></mj-image>
-      <mj-text>
-      <p>Date and time: 12th, 13th and 14th September 2022
-Venue: Online and In Person
-Register now: aka.ms/Codess2022
-To stay up to date with Codess 2022, join our LinkedIn group: www.linkedin.com/groups/13763851/</p>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image002.jpg"></mj-image>
+      <mj-text mj-class="subsection-content">
+      <p>Date and time: 12th, 13th and 14th September 2022</p>
+<p>Venue: Online and In Person</p>
+<p>Register now: <a href="aka.ms/Codess2022">aka.ms/Codess2022</a></p>
+<p>To stay up to date with Codess 2022, join <a href="https://www.linkedin.com/groups/13763851/">our LinkedIn group.</p>
     </mj-text>
   </mj-column>
 </mj-section>

@@ -1,6 +1,6 @@
 <mj-section>
   <mj-column>
-    <mj-image src=""></mj-image>
+    <mj-image src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t39.30808-6/300827308_7948799311858430_1710238446208968278_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=340051&_nc_ohc=IzoM5zj1PYcAX-BY7Bk&_nc_ht=scontent.fsyd4-1.fna&oh=00_AT9HsXfIajBrQuQ_ZDGosS9M5Un5DnLZ8hSxSrqTR83neQ&oe=63129EB1"></mj-image>
     <mj-text mj-class="subsection-content">
       <p>Story length: Around 300 words</p>
       <p>Due date: 4th October</p>
@@ -25,10 +25,11 @@
 
 <mj-section>
   <mj-column>
-    <mj-image src=""></mj-image>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image006.jpg"></mj-image>
     <mj-text mj-class="subsection-content">
-      Sign up using the Eventbrite link:
-      <a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677</a>
+    <p>Thu., 22 September 2022 11:00 am – 12:00 pm AEST</p>
+    <p>Online event</p>
+    <p><a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">Register on Eventbrite</a></p>
     </mj-text>
   </mj-column>
   <mj-column>
