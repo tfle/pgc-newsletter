@@ -1,0 +1,17 @@
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      myEnglish Week
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>myEnglish Week is a free program to help you build your language confidence and succeed at UNSW. Designed and delivered by expert English Language and Academic Skills teachers, the program is full of useful and fun sessions. You can join every day or choose sessions most useful for you. Some sessions will be in person and some will be delivered online.</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src=""></mj-image>
+    <mj-text mj-class="subsection-content">
+      <a href="https://events.humanitix.com/myenglish-week-term-3">Registration link</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+

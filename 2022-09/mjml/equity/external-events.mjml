@@ -1,0 +1,20 @@
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Sextember Comedy Night
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Is your dating life a joke?
+Does sexy talk just make you giggle?
+ 
+Join us at Penny Lane for a night of laugher and good vibes. Hosted by comedian Brendan Hancock and featuring up and coming stand-up talent from Sydney’s Comedy scene sharing stories and commentary on their experiences with dating, relationships, sex and sexual health. 
+
+This event is brought to you by PGC and UNSW Health Promotions as part of SEXtember.
+Get tickets using the link:
+https://events.humanitix.com/sextember-comedy-night</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src=""></mj-image>
+  </mj-column>
+</mj-section>

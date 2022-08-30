@@ -1,0 +1,24 @@
+<mj-section>	
+  <mj-column>	
+    <mj-text mj-class="subsection-title" >🔬 Research</mj-text>
+    <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>Arc PGC Student and Supervisor Awards Nominations Close</h4>
+      <p>Thank you for the <strong>235</strong> nominations made for the Research Candidate, Supervisor and Professional Staff Awards. The Assessment team is now scoring the nominations and we look forward to announcing the Awards on the 1st of November 2022. Further details on the Awards Ceremony will be available in our October release.</p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>UNSW PGC Canberra Trip Fully Booked</h4>
+      <p>Reminder to registrants of the PGC Canberra trip on the 7th of September that it is now fully booked. If you are unable to attend, please contact the PGC for a refund so we can give your spot to those in the waitlist.</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

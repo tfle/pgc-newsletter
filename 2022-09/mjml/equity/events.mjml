@@ -1,0 +1,43 @@
+<mj-section>
+  <mj-column>
+    <mj-image src=""></mj-image>
+    <mj-text mj-class="subsection-content">
+      <p>Story length: Around 300 words</p>
+      <p>Due date: 4th October</p>
+      <p>Submit your story using the link: <a href="https://docs.google.com/forms/d/e/1FAIpQLScJjj1K5Qm0YmCQ076T2NunDhDUx5xb0duPMps4rxgjPf4uqg/viewform">https://docs.google.com/forms/d/e/1FAIpQLScJjj1K5Qm0YmCQ076T2NunDhDUx5xb0duPMps4rxgjPf4uqg/viewform</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Submissions for Tell Me Your Story 2022 open now!
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Do you have a story of a time you overcame adversity? The PGC is inviting you to tell us your story. All stories submitted will be published (anonymously, if you wish) in a beautiful e-book available freely both online and in print.</p>
+      <p>Writers of shortlisted stories will be invited to present their work as part of UNSW's Diversity Fest in late October.</p>
+      <ul>
+      <li>💰 1st Prize $300</li>
+      <li>💸 2nd Prize $200</li>
+      <li>💵 3rd Prize $100</li>
+      </ul>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-image src=""></mj-image>
+    <mj-text mj-class="subsection-content">
+      Sign up using the Eventbrite link:
+      <a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Burnout Seminar
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Have you ever felt Burnout? Burnout is a state of exhaustion that stems from excessive and prolonged stress (did anyone say Post-Grad studies?). It occurs when you feel overwhelmed, emotionally drained, and unable to meet constant demands.</p>
+      <p>Bridey Martin, who is an excellent Student Support Advisor at UNSW, will be leading a seminar on the 22nd September at 11am. Here she will inform you of what Burnout is, how to prevent it, and what to do when you find yourself in a state of Burnout.</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,13 @@
+<mj-section>
+  <mj-column>
+    <mj-image src=""></mj-image>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Title
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Content</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

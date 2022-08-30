@@ -1,0 +1,19 @@
+<mj-section>	
+  <mj-column>	
+    <mj-text mj-class="subsection-title">🌏 International</mj-text>
+    <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <p>A new international student at UNSW? Are you overwhelmed by your first week of going to university? We got your back! Find all services and programs tailored to your needs as an international student to elevate your experience at UNSW.</p>
+      <p><a href="https://unsw.sharepoint.com/:b:/s/PGC2022/ERzdOY7LU7pMoUm-IxifMYoB1yjqxvNmuTQfbBYWvCqRog?e=c45GdU">The ultimate survival guide for international postgraduate students</a></p>
+      <p>The International Office would like to thank those who joined us at the Postgraduate Pub last Friday! We had an amazing time with you all. Keep an eye on our Facebook page, so that you don't miss our upcoming events!</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image003.jpg"></mj-image>
+  </mj-column>
+</mj-section>

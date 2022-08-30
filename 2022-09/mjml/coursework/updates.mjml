@@ -1,0 +1,15 @@
+<mj-section>	
+  <mj-column>	
+    <mj-text mj-class="subsection-title">📚 Coursework</mj-text>
+    <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h3></h3>
+      <p></p>
+    </mj-text>
+  </mj-column>
+</mj-section>

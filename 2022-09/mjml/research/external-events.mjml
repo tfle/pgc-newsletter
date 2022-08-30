@@ -1,0 +1,27 @@
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      UNSW Founders Entrepreneurial Workshops
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>https://unswfounders.com/founders-workshops.</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src=""></mj-image>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Finding the next journal to submit your research to? Use the free Journal Guide tool
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>https://www.journalguide.com</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src=""></mj-image>
+  </mj-column>
+</mj-section>

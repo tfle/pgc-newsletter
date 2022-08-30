@@ -1,0 +1,14 @@
+<mj-section>	
+  <mj-column>	
+    <mj-text mj-class="subsection-title">⚖️ Equity</mj-text>
+    <mj-divider border-width="1px" border-style="dashed" border-color="lightgrey" />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <p>Feeling under-represented? We would love to hear from you to see how we can improve your Uni experience. Contact the PGC on any one of our social media outlets or emails.</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

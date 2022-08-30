@@ -1,0 +1,30 @@
+<mj-section>
+  <!-- Event description -->
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      Codess 2022 – Launch Your Career | 12th, 13th, and 14th September 2022
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Call out to all female and non-binary tertiary students exploring a career in tech!</p>
+      <p>Codess is a global Microsoft initiative to encourage female and non-binary students to explore a career in tech.
+This year, the Microsoft Codess program has 3 jampacked days of exciting workshops where you can learn about the latest technology and have access to mentorship from leaders in Microsoft & industry!
+No coding experience required – just bring a willingness to learn and curiosity!</p>
+    </mj-text>
+  </mj-column>
+  <!-- Event image -->
+  <mj-column>
+    <mj-image src=""></mj-image>
+      <mj-text>
+      <p>Date and time: 12th, 13th and 14th September 2022
+Venue: Online and In Person
+Register now: aka.ms/Codess2022
+To stay up to date with Codess 2022, join our LinkedIn group: www.linkedin.com/groups/13763851/</p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+
+ 
+ 
+ 
