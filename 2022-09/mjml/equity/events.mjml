@@ -35,9 +35,9 @@
       <p>Do you have a story of a time you overcame adversity? The PGC is inviting you to tell us your story. All stories submitted will be published (anonymously, if you wish) in a beautiful e-book available freely both online and in print.</p>
       <p>Writers of shortlisted stories will be invited to present their work as part of UNSW's Diversity Fest in late October.</p>
       <ul>
-      <li>💰 1st Prize $300</li>
-      <li>💸 2nd Prize $200</li>
-      <li>💵 3rd Prize $100</li>
+        <li>💰 1st Prize $300</li>
+        <li>💸 2nd Prize $200</li>
+        <li>💵 3rd Prize $100</li>
       </ul>
     </mj-text>
   </mj-column>
@@ -47,9 +47,10 @@
   <mj-column>
     <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image006.jpg" />
     <mj-text mj-class="subsection-content">
-    <p>Thu., 22 September 2022 11:00 am – 12:00 pm AEST</p>
-    <p>Online event</p>
-    <p><a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">Register on Eventbrite</a></p>
+      <p>Thursday 22 September 2022</p>
+      <p>11:00 am – 12:00 pm AEST</p>
+      <p>Online event</p>
+      <p><a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">Register on Eventbrite</a></p>
     </mj-text>
   </mj-column>
   <mj-column>
@@ -59,6 +60,29 @@
     <mj-text mj-class="subsection-content">
       <p>Have you ever felt Burnout? Burnout is a state of exhaustion that stems from excessive and prolonged stress (did anyone say Post-Grad studies?). It occurs when you feel overwhelmed, emotionally drained, and unable to meet constant demands.</p>
       <p>Bridey Martin, who is an excellent Student Support Advisor at UNSW, will be leading a seminar on the 22nd September at 11am. Here she will inform you of what Burnout is, how to prevent it, and what to do when you find yourself in a state of Burnout.</p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image007.jpg" />
+    <mj-text mj-class"subsection-content">
+      <p>Tuesday 27 September 2022</p>
+      <p>6:00 pm - 8:00 pm AEST</p>
+      <p>Penny Lane Bar & Cafe<br>
+        Morven Brown Building (C20), Gate 8, High St, UNSW, Kensington NSW 2052, Australia</p>
+      <p><a href="https://events.humanitix.com/sextember-comedy-night">Get tickets on Humanitix</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+      SEXtember 2022: Comedy Night
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>Is your dating life a joke? Does sexy talk just make you giggle?</p>
+      <p>Join us at Penny Lane for a night of laugher and good vibes. Hosted by comedian Brendan Hancock and featuring up and coming stand-up talent from Sydney's Comedy scene sharing stories and commentary on their experiences with dating, relationships, sex and sexual health.</p>
+      <p>This event is brought to you by PGC and UNSW Health Promotions as part of SEXtember.</p>
     </mj-text>
   </mj-column>
 </mj-section>

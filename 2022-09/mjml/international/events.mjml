@@ -20,9 +20,9 @@
 
 <mj-section>
   <mj-column>
-    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F332871089%2F200202755546%2F1%2Foriginal.20220810-081035?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C34%2C1600%2C800&s=466d4b159f479350c4d9b1480e90fec3"></mj-image>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F332871089%2F200202755546%2F1%2Foriginal.20220810-081035?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C34%2C1600%2C800&s=466d4b159f479350c4d9b1480e90fec3" />
     <mj-text mj-class="subsection-content">
-      <p>Thu., 8 September 2022</p>
+      <p>Thursday 8 September 2022</p>
       <p>1:00 pm – 2:00 pm AEST</p>
       <p>Online event</p>
       <p>
@@ -43,9 +43,9 @@
 
 <mj-section>
   <mj-column>
-    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image005.jpg"></mj-image>
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image005.jpg" />
     <mj-text mj-class="subsection-content">
-      <p>Submission link: <a href="https://unsw.au1.qualtrics.com/jfe/form/SV_3ZNinqLHfktzspM">https://unsw.au1.qualtrics.com/jfe/form/SV_3ZNinqLHfktzspM</a></p>
+      <p>Submission closes 30 September 2022: <a href="https://unsw.au1.qualtrics.com/jfe/form/SV_3ZNinqLHfktzspM">https://unsw.au1.qualtrics.com/jfe/form/SV_3ZNinqLHfktzspM</a></p>
     </mj-text>
   </mj-column>
   <mj-column>
@@ -58,7 +58,7 @@
         <li>Celebrating International Food Day</li>
         <li>Choose a recipe that represents your culture</li>
         <li>Submit your recipe by 30th Sept</li>
-        <li> Literal cash up for grabs</li>
+        <li>Literal cash up for grabs</li>
       </ul>
       </p>
     </mj-text>

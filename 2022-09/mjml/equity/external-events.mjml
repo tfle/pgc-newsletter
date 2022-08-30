@@ -16,22 +16,3 @@
   </mj-column>
 </mj-section>
 -->
-
-<mj-section>
-  <mj-column>
-    <mj-text mj-class="subsection-title">
-      Sextember Comedy Night
-    </mj-text>
-    <mj-text mj-class="subsection-content">
-      <p>Is your dating life a joke? Does sexy talk just make you giggle?</p>
-      <p>Join us at Penny Lane for a night of laugher and good vibes. Hosted by comedian Brendan Hancock and featuring up and coming stand-up talent from Sydney's Comedy scene sharing stories and commentary on their experiences with dating, relationships, sex and sexual health.</p>
-      <p>This event is brought to you by PGC and UNSW Health Promotions as part of SEXtember.</p>
-    </mj-text>
-  </mj-column>
-  <mj-column>
-    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/docx/NEWSLETTER%20September%202022.fld/image007.jpg" />
-    <mj-text mj-class"subsection-content">
-      <p><a href="https://events.humanitix.com/sextember-comedy-night">Get tickets on Humanitix</a></p>
-    </mj-text>
-  </mj-column>
-</mj-section>
