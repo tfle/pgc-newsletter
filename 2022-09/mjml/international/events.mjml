@@ -1,11 +1,33 @@
+<!--
+<mj-section>
+  <mj-column>
+    <mj-image src="" />
+    <mj-text mj-class="subsection-content">
+      <p></p>
+      <p><a href=""></a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+-->
+
 <mj-section>
   <mj-column>
     <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F332871089%2F200202755546%2F1%2Foriginal.20220810-081035?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C34%2C1600%2C800&s=466d4b159f479350c4d9b1480e90fec3"></mj-image>
     <mj-text mj-class="subsection-content">
-    <p>Thu., 8 September 2022 1:00 pm – 2:00 pm AEST</p>
-<p>Online event</p>
-<p>
-      <a href="https://www.eventbrite.com.au/e/399341389847">Register on Eventbrite</a></p>
+      <p>Thu., 8 September 2022</p>
+      <p>1:00 pm – 2:00 pm AEST</p>
+      <p>Online event</p>
+      <p>
+        <a href="https://www.eventbrite.com.au/e/399341389847">Register on Eventbrite</a>
+      </p>
     </mj-text>
   </mj-column>
   <mj-column>
@@ -14,8 +36,7 @@
     </mj-text>
     <mj-text mj-class="subsection-content">
       <p>Are you approaching your job search strategically? Are you worried about securing a job as an international student?</p>
-      <p>
-Come join us virtually on 8th Sept. at 1pm to get some amazing insights from Katherine Pick, a career coach/career development consultant at UNSW Careers, and get your doubts cleared!</p>
+      <p>Come join us virtually on 8th Sept. at 1pm to get some amazing insights from Katherine Pick, a career coach/career development consultant at UNSW Careers, and get your doubts cleared!</p>
     </mj-text>
   </mj-column>
 </mj-section>
@@ -34,12 +55,12 @@ Come join us virtually on 8th Sept. at 1pm to get some amazing insights from Kat
     <mj-text mj-class="subsection-content">
       <p>Your culture, your recipe, your chance to win big</p>
       <ul>
-      <li>Celebrating International Food Day</li>
-      <li>Choose a recipe that represents your culture</li>
+        <li>Celebrating International Food Day</li>
+        <li>Choose a recipe that represents your culture</li>
         <li>Submit your recipe by 30th Sept</li>
         <li> Literal cash up for grabs</li>
       </ul>
-</p>
+      </p>
     </mj-text>
   </mj-column>
 </mj-section>

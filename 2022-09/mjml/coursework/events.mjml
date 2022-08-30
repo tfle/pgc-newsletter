@@ -1,19 +1,35 @@
+<!--
 <mj-section>
-  <!-- Event image -->
   <mj-column>
-    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F334764499%2F200202755546%2F1%2Foriginal.20220813-031641?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C25%2C800%2C400&s=00d9f41acc35552dc89189a0b0964b0e"></mj-image>
+    <mj-image src="" />
     <mj-text mj-class="subsection-content">
-      <p>Sat., 3 September 2022
-11:00 am – 3:00 pm AEST</p>
-      <p>Meet at Barangaroo Wharf 2 at 11am and go to Cockatoo Island together by ferry</p>
-      <p><a href="www.eventbrite.com.au/e/cockatoo-island-visit-tickets-401564940547">Register on Eventbrite</a></p>
+      <p><a href=""></a></p>
     </mj-text>
   </mj-column>
-  <!-- Event description -->
+
   <mj-column>
     <mj-text mj-class="subsection-title">
-      Cockatoo Island Visit
+
     </mj-text>
+    <mj-text mj-class="subsection-content">
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+-->
+
+<mj-section>
+  <mj-column>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F334764499%2F200202755546%2F1%2Foriginal.20220813-031641?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C25%2C800%2C400&s=00d9f41acc35552dc89189a0b0964b0e" />
+    <mj-text mj-class="subsection-content">
+      <p>Sat., 3 September 2022</p>
+      <p>11:00 am – 3:00 pm AEST</p>
+      <p>Meet at Barangaroo Wharf 2 at 11am and go to Cockatoo Island together by ferry</p>
+      <p><a href="https://www.eventbrite.com.au/e/cockatoo-island-visit-tickets-401564940547">Register on Eventbrite</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">Cockatoo Island Visit</mj-text>
     <mj-text mj-class="subsection-content">
       <p>Want to meet new postgraduate friends? Learn about Australia's history? Come on down to Cockatoo Island to learn about Australia's convict history with the PGC! We will meet at Barangaroo Wharf 2 at 11am and go to Cockatoo Island together by ferry*. Then, we'll provide a picnic lunch** followed by a private guided convict history tour of the island.</p>
       <p>This event is suitable for prospective or current postgraduate students or postgraduate alumni. Please note that everybody who has a university student ID card must bring it!</p>
@@ -25,32 +41,28 @@
 </mj-section>
 
 <mj-section>
-  <!-- Event image -->
   <mj-column>
-    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F340229799%2F200202755546%2F1%2Foriginal.20220823-040132?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C51%2C978%2C489&s=97238be79ceba4d8955babef7b01b855"></mj-image>
+    <mj-image src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F340229799%2F200202755546%2F1%2Foriginal.20220823-040132?w=800&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C51%2C978%2C489&s=97238be79ceba4d8955babef7b01b855" />
     <mj-text mj-class="subsection-content">
-      <p>Thu., 15 September 2022
-5:00 pm – 8:00 pm AEST</p>
+      <p>Thu., 15 September 2022</p>
+      <p>5:00 pm – 8:00 pm AEST</p>
       <p>Colombo House Theatres
-High Street, UNSW Sydney
-Theatre A, Colombo House
-Kensington, NSW 2052</p>
+        High Street, UNSW Sydney
+        Theatre A, Colombo House
+        Kensington, NSW 2052</p>
       <p><a href="https://www.eventbrite.com.au/e/opportunities-australia-x-pgc-x-hindusoc-fireside-chats-mentoring-tickets-406612939247">Register on Eventbrite</a></p>
     </mj-text>
   </mj-column>
-  <!-- Event description -->
   <mj-column>
-    <mj-text mj-class="subsection-title">
-      Opportunities Australia Mentorship Conclave
-    </mj-text>
+    <mj-text mj-class="subsection-title">Opportunities Australia Mentorship Conclave</mj-text>
     <mj-text mj-class="subsection-content">
       <p>Join us for an exciting & memorable night of mentorship & networking with experienced industry speakers in the Australian industry.</p>
       <p>This is a great opportunity for you to create valuable professional connections that can help you to set your initial footprint in the Australian job-market. Without a doubt, you will end up learning something new.</p>
       <p>Speakers:
-Bernie Fehon, Founder of Vinnies CEO Sleepout;
-Cassy Ballebye, Director at Macquarie Bank;
-Martin Borg, Head of Deposits at BOQ
- </p>
+        Bernie Fehon, Founder of Vinnies CEO Sleepout;
+        Cassy Ballebye, Director at Macquarie Bank;
+        Martin Borg, Head of Deposits at BOQ
+      </p>
     </mj-text>
   </mj-column>
 </mj-section>
