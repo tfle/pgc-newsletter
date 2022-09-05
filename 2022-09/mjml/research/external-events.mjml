@@ -29,7 +29,7 @@
     </mj-text>
   </mj-column>
   <mj-column>
-    <mj-image src="https://images.squarespace-cdn.com/content/v1/61777dfa47ac7559c3bbf6f6/31206623-b09d-4268-9cd6-fd503286fd1d/Founders-workshop-750x400.jpeg?format=750w" />
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/assets/asset6.jpeg" />
   </mj-column>
 </mj-section>
 
@@ -45,6 +45,6 @@
     </mj-text>
   </mj-column>
   <mj-column>
-    <mj-image src="https://www.journalguide.com/dist/images/home-photo.jpg" />
+    <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-09/assets/asset7.jpg" />
   </mj-column>
 </mj-section>
