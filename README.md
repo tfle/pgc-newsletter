@@ -1,4 +1,6 @@
-![PGC Newsletter](/assets/pgc-hero.jpg)
+<div align="center">
+  <img src="/assets/pgc-hero.jpg" alt="PGC Newsletter" height="500px"/>
+</div>
 
 # PGC Newsletter
 
