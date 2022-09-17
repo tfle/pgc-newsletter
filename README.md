@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/assets/pgc-hero.jpg" alt="PGC Newsletter" height="500px"/>
+  <img src="/assets/pgc-hero.jpg" alt="PGC Newsletter" height="300px"/>
 </div>
 
 # PGC Newsletter
