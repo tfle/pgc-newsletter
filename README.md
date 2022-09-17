@@ -2,6 +2,9 @@
 
 <div align="center">
   <img src="/assets/pgc-hero.jpg" alt="PGC Newsletter" height="200px"/>
+  <p>
+    <a href="https://www.arc.unsw.edu.au/pgc/newsletter#more">Website</a> · <a href="#preview">Preview</a>
+  </p>
 </div>
 
 The [Postgraduate Council](https://www.arc.unsw.edu.au/pgc) at the [University of New South Wales](https://www.unsw.edu.au) publishes a monthly newsletter which collates updates from several different committees. The [`mjml`](https://github.com/mjmlio/mjml) framework is used for generating the responsive HTML.
