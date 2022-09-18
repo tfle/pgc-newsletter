@@ -1,12 +1,12 @@
 # PGC Newsletter
 
 <p align="center">
-  <a href="https://www.arc.unsw.edu.au/pgc/newsletter#more">Website</a> · <a href="#preview">Preview</a>
+  <a href="https://www.arc.unsw.edu.au/pgc/newsletter#more">Website</a> · <a href="https://tfle.github.io/pgc-newsletter/pgc-cruise/index.html">Preview latest newsletter</a>
 </p>
 
 The [Postgraduate Council](https://www.arc.unsw.edu.au/pgc) at the [University of New South Wales](https://www.unsw.edu.au) publishes a monthly newsletter which collates updates from several different committees. The [`mjml`](https://github.com/mjmlio/mjml) framework is used for generating the responsive HTML.
 
-## Preview
+## Archive
 
 - [pgc-cruise](https://tfle.github.io/pgc-newsletter/pgc-cruise/index.html)
 
