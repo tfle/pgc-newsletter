@@ -29,11 +29,9 @@
 
     </mj-text>
     <mj-text mj-class="subsection-content">
-
-      Let's celebrate 2022 in style!
-Come sail the beautiful Sydney Harbour with your postgradu-mates!
-We are back again this year Bigger, Better and in true Gatsby style. Enjoy 3 hours of the beautiful Sydney Harbour and the stunning Sydney CBD skyline with a scrumptious dinner and unlimited drinks and entertainment!
-
+    <p>Let's celebrate 2022 in style!</p>
+    <p>Come sail the beautiful Sydney Harbour with your postgradu-mates!</p>
+    <p>We are back again this year Bigger, Better and in true Gatsby style. Enjoy 3 hours of the beautiful Sydney Harbour and the stunning Sydney CBD skyline with a scrumptious dinner and unlimited drinks and entertainment!</p>
     </mj-text>
   </mj-column>
 </mj-section>
