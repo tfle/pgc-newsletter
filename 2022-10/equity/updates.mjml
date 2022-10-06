@@ -30,27 +30,3 @@
   </mj-column>
 </mj-section>
 -->
-
-<mj-section mj-class="subsection-content">
-  <mj-column>
-    <mj-text mj-class="subsection-content">
-      <h4>
-
-        Burnout Seminar Postponed
-
-      </h4>
-      <p>
-      
-        The seminar on How to Prevent Academic Burnout has been postponed to the 6th of October at 12pm. <a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">Register on Eventbrite</a>.
-      
-      </p>
-    </mj-text>
-  </mj-column>
-  <mj-column>
-    <mj-image src="
-    
-      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image010.jpg
-    
-    " />
-  </mj-column>
-</mj-section>
