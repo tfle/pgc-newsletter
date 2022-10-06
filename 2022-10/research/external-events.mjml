@@ -1,0 +1,155 @@
+<!--
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-MONTH/assets/IMAGE.jpg
+    
+    " />
+    <mj-text mj-class="subsection-title">
+
+      TITLE OF EVENT
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>
+
+      DATE/TIME/LOCATION of EVENT
+
+      </p>
+      <p><a href="
+
+      LINK TO EVENT PAGE 
+        
+      ">View Event Page</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+
+      EVENT DESCRIPTION
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+-->
+
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/external001.jpg
+    
+    " />
+    <mj-text mj-class="subsection-content">
+      <p><a href="
+
+      https://www.student.unsw.edu.au/counselling/events
+        
+      ">View Event Page</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+      UNSW Mindfulness Workshops
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+
+      Are you interested in building new life skills?
+
+The UNSW Health teams are experienced in designing and running great programs, workshops and seminars for students. We also offer a select number of these to staff where appropriate.
+
+Why not make the most of your time at University and learn a few new life skills while you're here? It looks good on the CV too.
+ 
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/external002.jpg
+    
+    " />
+    <mj-text mj-class="subsection-content">
+      <p>
+
+      Online Mental Health | Student Counselling | UNSW Current Students
+
+      </p>
+      <p><a href="
+
+      https://www.student.unsw.edu.au/counselling/online
+        
+      ">View Event Page</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+      UNSW Mindfulness Workshops
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+UNSW Online Support Resources
+
+Mind Smart:
+Mind Smart helps you navigate your way through some of the common challenges of uni life. Mind Smart is made by UNSW students in partnership with Psychologists.
+
+Other Mental Health Services with phone, chat and resources
+
+REACH OUT:
+Reach Out helps young Australians with information, support and tools.
+
+Head to Health: 
+A complete overview of recommended evidence based online services for mental health in Australia.
+
+The Black Dog Institute:
+The Black Dog institute has information about a range of mental health concerns and an online clinic.
+
+HEADSPACE:
+A website that provides information, support and access to counselling for Australia’s youth. Talk to e-Headspa
+
+
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/external003.jpg
+    
+    " />
+      <p><a href="
+
+      https://www.teaching.unsw.edu.au/beginning-teach-ecrs-and-hdrs
+        
+      ">View Event Page</a></p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+      Beginning to Teach for ECRs and HDRs
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+
+      Beginning to Teach (BTT) is designed to develop the teaching capability of UNSW Early Career Researchers (ECRs) and Higher Degree Research candidates (HDRs) with little to no experience of teaching.
+
+The program was proposed by UNSW Research and developed by the Academic Development team in the PVCESE. It draws on the expertise of UNSW academics and the experience of UNSW students.
+
+BTT introduces participants to a range of topics and issues in learning and teaching that are key to getting started with teaching. Sessions explore perspectives on student learning, good practice in how to plan and facilitate a learning experience, and the basics of assessment and feedback. The program also gives participants the opportunity to plan, facilitate and evaluate a short teaching session.
+
+Program fees for UNSW ECRs and HDRS will be sponsored by the University upon admission into this program.
+
+    </mj-text>
+  </mj-column>
+</mj-section>

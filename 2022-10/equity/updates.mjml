@@ -1,0 +1,56 @@
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">Equity Committee<span style="float:right"><a href="https://www.arc.unsw.edu.au/pgc/about-us#office-bearers" style="text-decoration:none">⚖️</a></span></mj-text>
+    <mj-divider border-width="2px" border-style="dotted" border-color="#EA881D" padding-bottom="0px" />
+  </mj-column>
+</mj-section>
+
+<!--
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        TITLE OF UPDATE
+
+      </h4>
+      <p>
+      
+        UPDATE CONTENT
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-MONTH/assets/IMAGE.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+-->
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Burnout Seminar Postponed
+
+      </h4>
+      <p>
+      
+        The seminar on How to Prevent Academic Burnout has been postponed to the 6th of October at 12pm. <a href="https://www.eventbrite.com.au/e/burnout-seminar-tickets-408323866677">Register on Eventbrite</a>.
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image010.jpg
+    
+    " />
+  </mj-column>
+</mj-section>

@@ -1,0 +1,44 @@
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="section-title">Check out our upcoming events</mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-image src="
+
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/external004.jpeg
+    
+    " />
+    <mj-text mj-class="subsection-content">
+      <p>Saturday 29th October 2022</p>
+      <p>6:30 PM for 7:00 PM Set Sail</p>
+      <p>King Street Wharf Darling Harbour</p>
+      <p><a href="
+
+      https://www.arc.unsw.edu.au/uploads/pgc-cruise-2022.html
+      
+      ">View Event Page</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+      PGC Postgrad Cruise Party
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+
+      Let's celebrate 2022 in style!
+Come sail the beautiful Sydney Harbour with your postgradu-mates!
+We are back again this year Bigger, Better and in true Gatsby style. Enjoy 3 hours of the beautiful Sydney Harbour and the stunning Sydney CBD skyline with a scrumptious dinner and unlimited drinks and entertainment!
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-include path="./research/events.mjml" />
+<mj-include path="./coursework/events.mjml" />
+<mj-include path="./international/events.mjml" />
+<mj-include path="./equity/events.mjml" />
