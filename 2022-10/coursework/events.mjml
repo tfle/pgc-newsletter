@@ -50,18 +50,13 @@
   <mj-column>
     <mj-text mj-class="subsection-title">
 
-      Quiz Night with PGC
+      Quiz Night with PGC | Monday 24th October at 6-8pm 
 
     </mj-text>
     <mj-text mj-class="subsection-content">
-
-      Join us for a Quiz Night in Rooms 3 and 4 at the Roundhouse on Monday 24th October from 6 pm to 8 pm.
-
-Tickets will go on sale soon. Look out in Facebook and Insta for registration. Cost is only $5 per person. Drinks and canapes will be provided on the night. And there will be great prizes too.
-
-Hope to see you all there!
-
-
+    <p>Join us for a Quiz Night in Rooms 3 and 4 at the Roundhouse on Monday 24th October from 6 pm to 8 pm.</p>
+    <p>Tickets will go on sale soon. Look out in Facebook and Insta for registration. Cost is only $5 per person. Drinks and canapes will be provided on the night. And there will be great prizes too.</p
+    <p>Hope to see you all there!</p>
     </mj-text>
   </mj-column>
 </mj-section>
