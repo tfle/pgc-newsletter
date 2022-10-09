@@ -76,7 +76,7 @@
 
     <mj-section>
       <mj-column>
-        <mj-button href="https://www.arc.unsw.edu.au/voice/elections-rules/pgc-elections-notice" background-color="#EA881D" font-size="16px" width="100%">
+        <mj-button href="https://www.eventbrite.com.au/e/unsw-postgrad-cruise-party-tickets-415754170917" background-color="#EA881D" font-size="16px" width="100%">
           <strong>Get your tickets now!</strong>
         </mj-button>
       </mj-column>
