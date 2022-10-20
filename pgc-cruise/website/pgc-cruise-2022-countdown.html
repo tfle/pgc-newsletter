@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGC Cruise 2022 Countdown</title>
+    <style>
+        :root {
+            font-size: 16p x
+        }
+
+        @media (max-width: 500px) {
+            :root {
+                font-size: 14px
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            background: #87cd33;
+            color: white;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        }
+
+        h1 {
+            font-size: 5rem
+        }
+
+        h2 {
+            font-size: 2rem
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            background: #f0f0f0;
+        }
+
+        ul {
+            padding-left: 1rem;
+            list-style: none;
+        }
+
+        li {
+            flex-shrink: 0;
+            width: clamp(500px, 60vw, 800px);
+            padding-right: 1rem;
+        }
+
+        header {
+            height: 100vh
+        }
+
+        footer {
+            height: 50vh
+        }
+
+        :any-link {
+            color: #4e9815;
+        }
+
+        .df {
+            display: flex
+        }
+
+        .aic {
+            align-items: center
+        }
+
+        .jcc {
+            justify-content: center
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: black;
+            color: white;
+        }
+
+        .demo-wrapper {
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .demo-gallery:not(.last) {
+            padding-bottom: 1rem;
+        }
+
+        .demo-text .text {
+            font-size: clamp(8rem, 15vw, 16rem);
+            line-height: 1;
+            font-weight: 900;
+        }
+    </style>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 22, 2022 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const images = gsap.utils.toArray("img");
+        const loader = document.querySelector(".loader--text");
+        const updateProgress = (instance) =>
+            loader.textContent = `${Math.round(
+                instance.progressedCount * 100 / images.length)
+            }%`;
+
+        const showDemo = () => {
+            document.body.style.overflow = "auto";
+            document.scrollingElement.scrollTo(0, 0);
+            gsap.to(document.querySelector(".loader"), { autoAlpha: 0 });
+
+            gsap.utils.toArray("section").forEach((section, index) => {
+                const w = section.querySelector(".wrapper");
+                const [x, xEnd] =
+                    index % 2 ?
+                        ["100%", (w.scrollWidth - section.offsetWidth) * -1] :
+                        [w.scrollWidth * -1, 0];
+                gsap.fromTo(
+                    w,
+                    { x },
+                    {
+                        x: xEnd,
+                        scrollTrigger: {
+                            trigger: section,
+                            scrub: 0.5
+                        }
+                    });
+
+
+
+            });
+        };
+
+        imagesLoaded(images).on("progress", updateProgress).on("always", showDemo);
+    </script>
+</head>
+
+<body>
+    <div class='loader df aic jcc'>
+        <div>
+            <h1>Loading</h1>
+            <h2 class='loader--text'>0%</h2>
+        </div>
+    </div>
+    <div class='demo-wrapper'>
+        <header class='df aic jcc'>
+            <div>
+                <h1>PGC Cruise</h1>
+                <h2>6:30 PM Saturday 29 October</h2>
+                <br>
+                <h2><a href="https://www.eventbrite.com.au/e/unsw-postgrad-cruise-party-tickets-415754170917">Ticket
+                        sales</a> end on Friday 22 October</h2>
+                <h3>Time remaining to get your tickets: <span id="countdown"></span></h3>
+                <br>
+                <h2>Scroll down if you're not going.</h2>
+
+            </div>
+        </header>
+        <section class='demo-text'>
+            <div class='wrapper text'>
+                PGCCRUISEPGCCRUISEPGCCRUISE
+            </div>
+        </section>
+        <section class='demo-gallery'>
+            <ul class='wrapper'>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0044.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0076.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0044.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0020.jpg'>
+                </li>
+            </ul>
+        </section>
+        <section class='demo-gallery'>
+            <ul class='wrapper'>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0041.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0036.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0081.jpg'>
+                </li>
+            </ul>
+        </section>
+        <section class='demo-gallery'>
+            <ul class='wrapper'>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0026.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0062.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0087.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0040.jpg'>
+                </li>
+            </ul>
+        </section>
+        <section class='demo-gallery'>
+            <ul class='wrapper'>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0061.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0026.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0076.jpg'>
+                </li>
+                <li>
+                    <img
+                        src='https://raw.githubusercontent.com/tfle/pgc-newsletter/main/pgc-cruise/website/assets/0063.jpg'>
+                </li>
+            </ul>
+        </section>
+        <section class='demo-text'>
+            <div class='wrapper text'>
+                PGCCRUISEPGCCRUISEPGCCRUISE
+            </div>
+        </section>
+        <footer class='df aic jcc'>
+            <div>
+                <h2><a href="https://www.eventbrite.com.au/e/unsw-postgrad-cruise-party-tickets-415754170917">If you've
+                        changed your mind.</a>
+                </h2>
+            </div>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
