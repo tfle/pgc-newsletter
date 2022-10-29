@@ -1,0 +1,10 @@
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="section-title">Catch up on our latest updates</mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-include path="./updates-research.mjml" />
+<mj-include path="./updates-coursework.mjml" />
+<mj-include path="./updates-international.mjml" />
+<mj-include path="./updates-equity.mjml" />
