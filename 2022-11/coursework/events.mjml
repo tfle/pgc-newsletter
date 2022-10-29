@@ -1,0 +1,62 @@
+<!--
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-MONTH/assets/IMAGE.jpg
+    
+    " />
+    <mj-text mj-class="subsection-title">
+
+      TITLE OF EVENT
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+      <p>
+
+      DATE/TIME/LOCATION of EVENT
+
+      </p>
+      <p><a href="
+
+      LINK TO EVENT PAGE 
+        
+      ">View Event Page</a>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+
+      EVENT DESCRIPTION
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+-->
+
+<mj-section>
+  <mj-column>
+    <mj-image src="
+    
+    https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/external006.jpg
+    
+    " />
+    <mj-text mj-class="subsection-content">
+      <p>Monday 24 October 2022</p>
+      <p>6:00 PM - 8:00 PM</p>
+      <p>Roundhouse Rooms 3 and 4</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-text mj-class="subsection-title">
+
+      Quiz Night with PGC | Monday 24th October at 6-8pm 
+
+    </mj-text>
+    <mj-text mj-class="subsection-content">
+    <p>Join us for a Quiz Night in Rooms 3 and 4 at the Roundhouse on Monday 24th October from 6 pm to 8 pm.</p>
+    <p>Tickets will go on sale soon. Look out in Facebook and Insta for registration. Cost is only $5 per person. Drinks and canapes will be provided on the night. And there will be great prizes too.</p
+    <p>Hope to see you all there!</p>
+    </mj-text>
+  </mj-column>
+</mj-section>

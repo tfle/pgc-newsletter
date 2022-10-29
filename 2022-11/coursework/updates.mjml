@@ -1,0 +1,182 @@
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="subsection-title">Coursework Committee<span style="float:right"><a href="https://www.arc.unsw.edu.au/pgc/about-us#office-bearers" style="text-decoration:none">📚</a></span></mj-text>
+    <mj-divider border-width="2px" border-style="dotted" border-color="#EA881D" padding-bottom="0px" />
+  </mj-column>
+</mj-section>
+
+<!--
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        TITLE OF UPDATE
+
+      </h4>
+      <p>
+      
+        UPDATE CONTENT
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-MONTH/assets/IMAGE.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+-->
+
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Cockatoo Island Visit – Saturday 3rd September 2022
+
+      </h4>
+      <p>
+      
+        The Cockatoo Island visit was booked out and despite the rainy weather, postgraduate students met at Barangaroo and made their way to Cockatoo Island by ferry.
+We had the opportunity to meet fellow postgraduate students and make new friends.
+Our tour guide provided an exciting and insightful tour of Cockatoo Island which provided a unique perspective through learning about Australia's military and convict history.
+
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image001.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        UNSW Future Students Open Day – Saturday 3rd September 2022
+
+      </h4>
+      <p>
+      
+        Positioned in the Clancy Auditorium, UNSW Future Students Open Day provided an opportunity for prospective postgraduate students to learn about coursework opportunities. This event also featured a Postgraduate focused panel discussion as well as a bespoke concierge service that directly connected attendees interested in Postgraduate studies at UNSW with academics in their field of interest.
+
+Due to the positive feedback received during the event, we will continue to host a stall as well as panel discussions in future terms.
+
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image002.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        UNSW 0 Week, Monday 5th to Thursday 8th September 2022
+
+      </h4>
+      <p>
+      
+        The PGC held a stall at the 0 Week event on 6th and 7th September. It was a wonderful opportunity for current and aspiring postgraduates to learn how the PGC representatives could help them and provide opportunities to meet fellow postgrad students. Keep a look at in future 0 Week events each term!
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image003.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        UNSW PGC Canberra Trip, Wednesday 7th September 2022
+
+      </h4>
+      <p>
+      
+        A little snapshot from our UNSW Postgraduate Canberra one-day Trip hosted by Postgraduate Council UNSW in collaboration with Canberra Innovation Network (CBRIN). 23 postgrads from Sydney and 15 postgrads from Canberra enjoyed a day of fun, friendship, and learning! It was an intensive program from Research to Impact workshop, we enjoyed an authentic Italian pizza lunch, a visit to the Australian war memorial, Old Parliament House, and Black Mountain to the Telstra Tower! The networking evening #FirstWedenesdayConnect with local entrepreneurs, researchers, investors, and innovators, as well as UNSW Canberra-based Postgrads provided an insight to the world of entrepreneurship and meeting new industry contacts which provided leads for Research students.      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image006.png
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Opportunities Australia Mentorship Conclave – Thursday 15th September 2022
+
+      </h4>
+      <p>
+      
+        This was an exciting and memorable night of mentorship and networking with experienced industry speakers Mayor of Randwick, Dilan Park, Founder of Vinnies CEO Sleepout, Bernie Fehon and Director at Macquarie Bank, Cassy Ballebye. This was a great opportunity for students to create valuable professional connections.
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image007.png
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Coffee and Chat with Postgraduate Council (PGC), Tuesday 20th September
+
+      </h4>
+      <p>
+      
+        The Coursework office in partnership with Equity office hosted a Coffee and Chat event at the Postgraduate Lounge on Tuesday 20th September, welcoming postgrads in a casual and relaxed environment. Postgrads were able to kick back and relax, meeting new friends while sharing stories and de-stressing.
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-10/assets/image008.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
