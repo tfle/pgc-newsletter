@@ -1,0 +1,27 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Questrial" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Questrial" />
+      <mj-text color="grey" font-size="14px" />
+      <mj-section background-color="white" />
+      <mj-class name="section-title" font-size="20px" align="center" />
+      <mj-class name="subsection-title" font-size="20px" color="#EA881D" />
+      <mj-class name="subsection-content" padding-top="0px" padding-bottom="0px" />
+    </mj-attributes>
+    <mj-style>
+      a {
+        color: #EA881D
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#E1E8ED">
+    <mj-include path="./header-hero.mjml" />
+    <mj-include path="./presidents-message.mjml" />
+    <mj-include path="./committee-updates.mjml" />
+    <mj-include path="./committee-events.mjml" />
+    <mj-include path="./external-events.mjml" />
+    <mj-include path="./social-footer.mjml" />
+  </mj-body>
+</mjml>
