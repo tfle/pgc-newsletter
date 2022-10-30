@@ -4,7 +4,7 @@
   </mj-column>
 </mj-section>
 
-<mj-include path="./updates-research.mjml" />
-<mj-include path="./updates-coursework.mjml" />
+<!-- <mj-include path="./updates-research.mjml" /> -->
+<!-- <mj-include path="./updates-coursework.mjml" /> -->
 <mj-include path="./updates-international.mjml" />
-<mj-include path="./updates-equity.mjml" />
+<!-- <mj-include path="./updates-equity.mjml" /> -->

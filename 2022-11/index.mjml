@@ -1,6 +1,7 @@
 <mjml>
   <mj-head>
     <mj-font name="Questrial" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" />
+    <mj-preview>UNSW Postgraduate Council - November Newsletter</mj-preview>
     <mj-attributes>
       <mj-all font-family="Questrial" />
       <mj-text color="grey" font-size="14px" />
@@ -21,7 +22,7 @@
     <mj-include path="./message.mjml" />
     <mj-include path="./updates.mjml" />
     <mj-include path="./events.mjml" />
-    <mj-include path="./external.mjml" />
+    <!-- <mj-include path="./external.mjml" /> -->
     <mj-include path="./footer.mjml" />
   </mj-body>
 </mjml>

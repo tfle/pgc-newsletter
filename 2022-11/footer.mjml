@@ -3,9 +3,9 @@
     <mj-text mj-class="section-title">Follow us to stay in touch</mj-text>
     <mj-image src="https://raw.githubusercontent.com/tfle/pgc-newsletters/main/assets/pgc-2022.jpg" href="https://www.arc.unsw.edu.au/pgc" />
     <mj-social>
-      <mj-social-element name="linkedin-noshare" href="https://www.linkedin.com/company/unsw-postgraduate-council-pgc/" />
       <mj-social-element name="facebook-noshare" href="https://www.facebook.com/unswpgc" />
       <mj-social-element name="instagram-noshare" href="https://www.instagram.com/unswpgc/" />
+      <mj-social-element name="linkedin-noshare" href="https://www.linkedin.com/company/unsw-postgraduate-council-pgc/" />
       <mj-social-element name="web-noshare" href="https://www.arc.unsw.edu.au/pgc" />
     </mj-social>
   </mj-column>
