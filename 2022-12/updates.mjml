@@ -1,0 +1,124 @@
+<mj-section background-color="#F3F3F3">
+  <mj-column>
+    <mj-text mj-class="section-title">Catch up on our latest updates</mj-text>
+  </mj-column>
+</mj-section>
+
+<!--
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        TITLE OF UPDATE
+
+      </h4>
+      <p>
+      
+        UPDATE CONTENT
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-MONTH/assets/IMAGE.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+-->
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        ADHD Climb Stories
+
+      </h4>
+      <p>
+        In October, the PGC hosted a Sydney Harbour Bridge climb to raise awareness about ADHD especially among the postgraduate cohort. We thank the members of our postgraduate community who took part in this event and who share their lived experiences <a href="https://fb.watch/h92pm8-Pij/">in this video</a>.
+	Feel free to check out <a href="https://aadpa.com.au/wp-content/uploads/2022/08/Talking-About-ADHD-Poster-7.pdf">this poster</a> which gives an overview of what ADHD is and how to talk about it.
+            
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image href="https://fb.watch/h92pm8-Pij/" src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-12/assets/bridge_screen.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Return of the PGC Cruise
+
+      </h4>
+      <p>
+      
+        After a temporary hiatus, the PGC Cruise Party made a roaring comeback last month with more than 300 people onboard to see the beautiful Sydney Harbour and stunning Sydney CBD skyline. Thank you for all coming together again in style and making the event such a success! We can't wait to announce the 2023 edition and see you all on the dance floor once more.
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-12/assets/pgc_cruise.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Congratulations to All Arc PGC Research Awards 2022 Awardees!
+
+      </h4>
+      <p>
+
+        Thank you to all the attendees that joined us in recognizing those who have gone above and beyond to enhancing the HDR experience at UNSW. The <a href="https://www.arc.unsw.edu.au/pgc/research-awards/2022#more">award winners and video highlights of the ceremony</a> in November are on our website for viewing. We look forward to receiving your nominations and seeing you in the Arc PGC Research Awards Ceremony in 2023!
+      
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image href="https://www.arc.unsw.edu.au/pgc/research-awards/2022#more" src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-12/assets/research_awards_2022_group.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="subsection-content">
+  <mj-column>
+    <mj-text mj-class="subsection-content">
+      <h4>
+
+        Exciting News Regarding UNSW HDR Scholarship Rates
+
+      </h4>
+      <p>HDRs are major contributors to the world-class research UNSW undertakes and the <a href="https://research.unsw.edu.au/hdr-stipend-change">HDR stipend change</a> will allow for even greater focus on research to solve some of society’s most complex challenges from climate change to medicine and the arts.</p>
+      <p>You can find out more about the HDR stipend change by getting in touch with the PGC Vice-President (Research), <a href="mailto:pgc.vp.research@arc.unsw.edu.au">Jack Lodge</a>, or the <a href="https://research.unsw.edu.au/division-research-enterprise-contact-list#grs">UNSW Graduate Research School</a>.</p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image src="
+    
+      https://raw.githubusercontent.com/tfle/pgc-newsletter/main/2022-12/assets/phd_students.jpg
+    
+    " />
+  </mj-column>
+</mj-section>
