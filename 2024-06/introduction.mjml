@@ -1,14 +1,14 @@
 <mj-section>
     <mj-column>
-        <mj-text mj-class="heading" padding-bottom="0px">May PGC Newsletter</mj-text>
+        <mj-text mj-class="heading" padding-bottom="0px">June - July PGC Newsletter</mj-text>
     </mj-column>
 </mj-section>
 
 <mj-section>
     <mj-column>
         <mj-text mj-class="body">
-            <p style="font-weight:500">Help Us Help You</p>
-            <p>Our survey will remain open for a few more days and I’m hoping to share some preliminary results this time next month. If you haven’t done it yet, it takes just a few minutes, and your responses will form a big part of our internal discussions and the ones we have with UNSW leadership in the second half of the year. With T2 around the corner, we’ll reopen our expression of interest form to join committees where you can help direct advocacy and run events that you want to see for postgrads. For more from me, click on <i>Read more</i>, otherwise, I hope to see some of you at our T2 O-Week stall!</p>
+            <p style="font-weight:500">Postgrad Series and More</p>
+            <p>The team behind the PGC have been hard at work putting together a series of events for this term, including a networking night, panels on research translation and postgrad parenting, workshops on public speaking and EndNote, and a seminar on rights, research and AI. The second half of the year lends itself to a lot of excitement as we gear up for the annual Arc PGC Research Awards, now in its 13th year of running, and of course, the PGC elections where you can nominate and vote for your student representatives. With something on every week from now until the end of July, it’s a great time to get involved!</p>
             <p style="font-weight:500">Tony Le</p>
             <p>2024 PGC President</p>
         </mj-text>
@@ -17,7 +17,7 @@
 
 <mj-section>
     <mj-column>
-        <mj-button align="left" background-color="#081d23" font-weight="500" color="white" href="https://www.arc.unsw.edu.au/uploads/pgc-newsletter-2024-05-more.html" target="_self">
+        <mj-button align="left" background-color="#081d23" font-weight="500" color="white" href="https://www.arc.unsw.edu.au/uploads/pgc-newsletter-2024-06-07-more.html" target="_self">
             Read more
         </mj-button>
     </mj-column>

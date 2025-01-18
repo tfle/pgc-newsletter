@@ -1,0 +1,86 @@
+<mj-section padding-top="20px">
+    <mj-column>
+        <mj-text mj-class="heading">Highlights</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/pgc-eoi-16x9.jpg" href="https://unsw.au1.qualtrics.com/jfe/form/SV_6rjUSxM5s3n3XJc"/>
+        <mj-text mj-class="subheading">
+            <a href="https://unsw.au1.qualtrics.com/jfe/form/SV_6rjUSxM5s3n3XJc" target="_blank">PGC 2024 Committee Expression of Interest</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            We are now inviting expressions of interest to join subcommittees in 2024! Join a diverse team dedicated to enhancing the postgraduate student experience at UNSW.
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/BD233788%20Board%20Elections%20Marketing%20-%20Arc%20Hero2_1.jpg"
+                  href="https://www.arc.unsw.edu.au/about/arc-board/arc-board-elections-notice"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.arc.unsw.edu.au/about/arc-board/arc-board-elections-notice" target="_blank">Arc Board Elections 2024</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Get involved with shaping the student experience by nominating yourself at the upcoming Arc Board Elections! Nominations open February 26 and close March 11.
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/Postgrad-Logo-1-Large-01-01_1.jpg"
+                  href="https://www.arc.unsw.edu.au/uploads/PGC%20Open%20Letter.pdf"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.arc.unsw.edu.au/uploads/PGC%20Open%20Letter.pdf" target="_blank">Our Response On Proposed Changes to the 485 Visa</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            The PGC strongly oppose the proposed reduction to the maximum eligible age for a Temporary Graduate visa.
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/Student%20FODI_Student%20News%2016x9.jpg"
+                  href="https://unsw.to/UNSWFODI"/>
+        <mj-text mj-class="subheading">
+            <a href="https://unsw.to/UNSWFODI" target="_blank">UNSW x FODI Student Ideas Incubator</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Apply to join a student development program focusing on content development and presentation skills and have the opportunity to present at the Festival of Dangerous Ideas 2024!
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/https---cdn.evbuc.com-images-644792299-268761244958-1-original.20231120-011936.jpg"
+                  href="https://www.unsw.edu.au/employability/student-resources/find-industrial-training"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.unsw.edu.au/employability/student-resources/find-industrial-training" target="_blank">Find Industrial Training Events</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Register now for T1 2024 industrial training events by UNSW Employability and UNSW Engineering. Get all the tips and advice you need to find a placement that's right for you.
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/https---cdn.evbuc.com-images-674571139-268761244958-1-original.20240115-075606.jpg"
+                  href="https://www.eventbrite.com/cc/careers-seminars-2993749"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.eventbrite.com/cc/careers-seminars-2993749" target="_blank">UNSW Employability: Seminar Series</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Participate in UNSW Employability career seminars to enhance your employability journey at UNSW.
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/unsw-student-support-development_0.jpg"
+                  href="https://www.student.unsw.edu.au/support"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.student.unsw.edu.au/support" target="_blank">UNSW Support and Development Links</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Make the most of your time at UNSW with a range of support and development services.
+        </mj-text>
+    </mj-column>
+</mj-section>

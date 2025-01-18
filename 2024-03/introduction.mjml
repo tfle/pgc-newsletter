@@ -1,0 +1,24 @@
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="heading" padding-bottom="0px">March PGC Newsletter</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="body">
+            <p style="font-weight:500">Happy Flexi Week!</p>
+            <p>This month we're saying welcome to a new batch of HDR candidates, a flexible Week 6 for coursework students, and a week of celebration in recognising our diversity at UNSW and in Australia. Since O-Week, we’ve appointed 25 new committee members across the PGC who will be working closely with Office Bearers and Committee Liaisons to represent the postgraduate student voice. If you have a moment, please come say hello to them at our events or drop by one of our monthly meetings to stay in touch with what each PGC Office is up to!</p>
+            <p style="font-weight:500">Tony Le</p>
+            <p>2024 PGC President</p>
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-button align="left" background-color="#081d23" font-weight="500" color="white" href="https://www.arc.unsw.edu.au/uploads/pgc-newsletter-2024-03-more.html" target="_self">
+            Read more
+        </mj-button>
+    </mj-column>
+</mj-section>

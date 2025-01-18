@@ -1,0 +1,25 @@
+<mj-section padding-top="20px">
+    <mj-column>
+        <mj-text mj-class="heading">Quick Links</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="subheading">
+            <a href="https://www.parliament.nsw.gov.au/la/Pages/ePetition-details.aspx?q=tabuKTP7hWgVFy0qTdhC7w">Petition - Make transport concessions available to all students in NSW</a>
+        </mj-text>
+        <mj-text mj-class="body">
+        </mj-text>
+        <mj-text mj-class="subheading">
+            <a href="https://www.aph.gov.au/e-petitions/petition/EN5768">Petition - Just and fair considerations for Temporary Graduate Visa (Visa 485)</a>
+        </mj-text>
+        <mj-text mj-class="body">
+        </mj-text>
+        <!--
+        <mj-text mj-class="body">
+            Unlock your professional potential and elevate your career journey with UNSW Employability events in T1.
+        </mj-text>
+        -->
+    </mj-column>
+</mj-section>

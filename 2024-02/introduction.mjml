@@ -1,0 +1,42 @@
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="heading" padding-bottom="0px">February PGC Newsletter</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="body">
+            <p style="font-weight:500">Hello 2024!</p>
+            <p>In the next few weeks, we’ll see many postgraduate students return to campus and many new ones commence their programs at UNSW. It’s always an exciting time of the year as we get a glimpse of the real diversity within the postgraduate community and its potential to truly shape the student experience. Whether you’re here for a short while to complete a Grad Cert, or just about to embark on a PhD, the Postgraduate Council is here to represent your voice and advocate for your needs to decision-making bodies at UNSW and beyond. I hope you’ll stay in touch, and on behalf of the PGC, I want to wish you all a wonderful year ahead!</p>
+            <p style="font-weight:500">Tony Le</p>
+            <p>2024 PGC President</p>
+        </mj-text>
+              <mj-accordion>
+          <mj-accordion-element>
+            <mj-accordion-title>Why use an accordion?</mj-accordion-title>
+            <mj-accordion-text>
+              <span style="line-height:20px">
+                Because emails with a lot of content are most of the time a very bad experience on mobile, mj-accordion comes handy when you want to deliver a lot of information in a concise way.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+          <mj-accordion-element>
+            <mj-accordion-title>How it works</mj-accordion-title>
+            <mj-accordion-text>
+              <span style="line-height:20px">
+                Content is stacked into tabs and users can expand them at will. If responsive styles are not supported (mostly on desktop clients), tabs are then expanded and your content is readable at once.
+              </span>
+            </mj-accordion-text>
+          </mj-accordion-element>
+        </mj-accordion>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-button align="left" background-color="#081d23" font-weight="500" color="white" href="https://www.arc.unsw.edu.au/uploads/pgc-newsletter-2024-02-more.html" target="_self">
+            Read more
+        </mj-button>
+    </mj-column>
+</mj-section>

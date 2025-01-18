@@ -8,7 +8,21 @@ document.getElementById('emailForm').addEventListener('submit', async function(e
     const mjmlTemplate = `
 <mjml>
     <mj-head>
-        <!-- ... (keep the existing mj-head content) ... -->
+        <mj-font name="itc-avant-garde-gothic-pro" href="https://use.typekit.net/ydl4elm.css"/>
+        <mj-attributes>
+            <mj-all font-family="itc-avant-garde-gothic-pro, sans-serif" font-weight="300"/>
+            <mj-class name="heading" font-weight="700" font-size="22px" color="#ec881d" line-height="1.2"/>
+            <mj-class name="subheading" font-weight="500" font-size="22px" color="#081d23" line-height="1.2"
+                      padding-top="0" padding-bottom="0"/>
+            <mj-class name="body" font-weight="300" font-size="16px" color="#444d3e" line-height="1.6"/>
+            <mj-section padding="0"/>
+        </mj-attributes>
+        <mj-style>
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        </mj-style>
     </mj-head>
 
     <mj-body>

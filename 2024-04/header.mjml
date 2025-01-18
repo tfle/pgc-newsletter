@@ -1,0 +1,6 @@
+<mj-section>
+    <mj-column>
+        <mj-image src="https://www.arc.unsw.edu.au/uploads/pgc-logo.png" width="50px" align="left" href="https://www.arc.unsw.edu.au/pgc"/>
+        <mj-image src="https://www.arc.unsw.edu.au/uploads/pgc-2024-newsletter-1920x1080.jpg" href="https://www.arc.unsw.edu.au/pgc"/>
+    </mj-column>
+</mj-section>
