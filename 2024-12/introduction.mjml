@@ -1,0 +1,24 @@
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="heading" padding-bottom="0px">September PGC Newsletter</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-text mj-class="body">
+            <p style="font-weight:500">Nominate for PGC 2025</p>
+            <p>As we approach another election season, I can’t help but reflect on my time serving on the Postgraduate Council and how it has shaped my journey and personal growth at UNSW. My experience - from hosting coffee catchups and pub nights, to speaking at university events and advocating for students in our meetings with leadership – has been incredibly rewarding. If you want to feel more connected to the community and help shape discussions and decision making at Arc and UNSW, I highly encourage you to consider nominating yourself!</p>
+            <p style="font-weight:500">Tony Le</p>
+            <p>2024 PGC President</p>
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-button align="left" background-color="#081d23" font-weight="500" color="white" href="https://www.arc.unsw.edu.au/uploads/pgc-newsletter-2024-09-more.html" target="_self">
+            Read more
+        </mj-button>
+    </mj-column>
+</mj-section>

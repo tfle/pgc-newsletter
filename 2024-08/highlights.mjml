@@ -1,0 +1,90 @@
+<mj-section padding-top="20px">
+    <mj-column>
+        <mj-text mj-class="heading">Highlights</mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/postgrad-series-2024.jpg"
+                  href="https://www.arc.unsw.edu.au/events/postgrad-series"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.arc.unsw.edu.au/events/postgrad-series" target="_blank">Postgrad Series</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Coming up: Networking Night, Public Speaking & Presenting, Research Translation Panel, Rights, Research & AI Seminar, Postgrads Parenting Panel, EndNote Workshop
+            <p style="color:#ec881d">Tues, 18 Jun - Thu, 1 Aug</p>
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/lets-play-soccer-with-pgc.jpg"
+                  href="https://www.eventbrite.com.au/e/lets-play-soccer-with-pgc-tickets-928736224047"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.eventbrite.com.au/e/lets-play-soccer-with-pgc-tickets-928736224047" target="_blank">Let's Play Soccer with PGC</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Join us for a fun soccer match! Bring your friends to play and cheer each other on while enjoying delicious snacks. Participation and entry are free, and we'll provide the treats.
+            <p style="color:#ec881d">Fri, 28 Jun 2:30 - 4:30 PM</p>
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/arc-pgc-research-awards-2024.jpg"
+                  href="https://www.arc.unsw.edu.au/voice/pgc/research-awards"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.arc.unsw.edu.au/voice/pgc/research-awards" target="_blank">Arc PGC Research Awards 2024</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Supported by the Graduate Research School, these awards celebrate the remarkable achievements of HDR students, staff, and supervisors at UNSW. Nominations close Monday, 1 July 2024.
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/scam-safety-for-international-students.jpg"
+                  href="https://www.eventbrite.com.au/e/scam-safety-session-protect-yourself-tickets-919780737947"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.eventbrite.com.au/e/scam-safety-session-protect-yourself-tickets-919780737947" target="_blank">Scam Safety Session: Protect Yourself!</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            In this online workshop, delve into the intricate world of scams. From phishing emails to rental fraud, equip yourself with the knowledge to spot red flags and shield yourself from financial harm.
+            <p style="color:#ec881d">Wed, 26 June 12:30 - 1:30 PM</p>
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/be-scam-aware.jpg"
+                  href="https://www.student.unsw.edu.au/scams"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.student.unsw.edu.au/scams" target="_blank">Be Scam Aware</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Scams are increasing in frequency and severity with scammers often targeting international students, including those at UNSW. Read about how to spot a scam and what to do if you fall victim to one.
+        </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/speakup.jpg"
+                  href="https://www.unsw.edu.au/planning-assurance/conduct-integrity/complaints-unsw"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.unsw.edu.au/planning-assurance/conduct-integrity/complaints-unsw" target="_blank">SpeakUp at UNSW</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            If you want to speak up about something you’ve seen or experienced that doesn’t feel right, you can safely raise a concern and get the support you need.
+        </mj-text>
+    </mj-column>
+    <mj-column>
+        <mj-image fluid-on-mobile="true" src="https://www.arc.unsw.edu.au/uploads/unsw-student-support-development_0.jpg"
+                  href="https://www.student.unsw.edu.au/support"/>
+        <mj-text mj-class="subheading">
+            <a href="https://www.student.unsw.edu.au/support" target="_blank">UNSW Support and Development Links</a>
+        </mj-text>
+        <mj-text mj-class="body">
+            Make the most of your time at UNSW with a range of support and development services from Wellbeing and Health to Academic Skills.
+        </mj-text>
+    </mj-column>
+</mj-section>
