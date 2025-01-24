@@ -10,7 +10,7 @@ import {Input} from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea";
 import {Label} from "@/components/ui/label"
 import {Button} from "@/components/ui/button.tsx";
-import {Plus} from "lucide-react";
+import {Plus, Trash2} from "lucide-react";
 
 interface Highlight {
   title: string;
@@ -83,6 +83,16 @@ function App() {
     setFormData(newData);
   }
 
+  const removeItem = (section: string, index: number) => {
+    const newData = { ...formData };
+    if (section === "highlights") {
+      newData.highlights.splice(index, 1);
+    } else if (section === "events") {
+      newData.events.splice(index, 1);
+    }
+    setFormData(newData);
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -121,20 +131,28 @@ function App() {
                 <CardTitle>Update</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <div className="flex justify-end">
+                  <Button
+                    onClick={() => removeItem("highlights", index)}
+                    variant="ghost"
+                  >
+                    <Trash2/>
+                  </Button>
+                </div>
                 <Input
                   type="text"
                   placeholder="Title"
                   value={highlight.title}
-                  onChange={(e) => handleChange(e, "highlights"  , index, "title")}/>
+                  onChange={(e) => handleChange(e, "highlights", index, "title")}/>
                 <Textarea
                   placeholder="Description"
                   value={highlight.description}
-                  onChange={(e) => handleChange(e, "highlights"  , index, "description")}/>
+                  onChange={(e) => handleChange(e, "highlights", index, "description")}/>
                 <Input
                   type="url"
                   placeholder="Image URL"
                   value={highlight.imageURL}
-                  onChange={(e) => handleChange(e, "highlights"  , index, "imageURL")}/>
+                  onChange={(e) => handleChange(e, "highlights", index, "imageURL")}/>
                 <Input
                   type="url"
                   placeholder="Link URL"
@@ -162,6 +180,14 @@ function App() {
                 <CardTitle>Event</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <div className="flex justify-end">
+                  <Button
+                    onClick={() => removeItem("highlights", index)}
+                    variant="ghost"
+                  >
+                    <Trash2/>
+                  </Button>
+                </div>
                 <Input
                   type="text"
                   placeholder="Event Title"
