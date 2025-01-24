@@ -1,4 +1,5 @@
-import './App.css'
+import React from "react"
+import "./App.css"
 import {
   Card,
   CardContent,
@@ -11,6 +12,29 @@ import { Label } from "@/components/ui/label"
 
 
 function App() {
+  const [formData, setFormData] = React.useState({
+    month: "",
+    presidentMessage: "",
+    highlights: [{
+      title: "",
+      description: "",
+      imageURL: "",
+      link: ""
+    }],
+    events: [{
+      title: "",
+      description: "",
+      date: "",
+      imageURL: "",
+      link: ""
+    }]
+  })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>, section: string) => {
+    setFormData({...formData, [section]: e.target.value})
+    console.log(formData)
+  }
+
   return (
     <Card>
       <CardHeader>
@@ -19,9 +43,16 @@ function App() {
       <CardContent className="space-y-4">
         <div className="space-y-4">
           <Label htmlFor="newsletterMonth">Newsletter Month</Label>
-          <Input type="text" placeholder="e.g. January"/>
+          <Input
+            type="text"
+            placeholder="e.g. January"
+            value={formData.month}
+            onChange={(e) => handleChange(e, "month")}/>
           <Label htmlFor="message">President's Message</Label>
-          <Textarea id="message"/>
+          <Textarea
+            id="message"
+            value={formData.presidentMessage}
+            onChange={(e) => handleChange(e, "presidentMessage")}/>
         </div>
         <div className="space-y-4">
           <h2 className="text-lg font-medium">Highlights</h2>
