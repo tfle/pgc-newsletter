@@ -57,11 +57,15 @@ function App() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     section: keyof FormData,
     index?: number,
-    field?: keyof (Highlight | Event)
+    field?: keyof Highlight | keyof Event
   )=> {
     if (index !== undefined && field !== undefined) {
       const newData = {...formData};
-      (newData[section] as (Highlight | Event)[])[index][field] = e.target.value;
+      if (section === "highlights") {
+        (newData.highlights[index] as Highlight)[field as keyof Highlight] = e.target.value;
+      } else if (section === "events") {
+        (newData.events[index] as Event)[field as keyof Event] = e.target.value;
+      }
       setFormData(newData);
     } else {
       setFormData({...formData, [section]: e.target.value})
@@ -139,23 +143,52 @@ function App() {
               </CardContent>
             </Card>
           ))}
-
         </div>
 
+        {/* Events Section */}
         <div className="space-y-4">
           <h2 className="text-lg font-medium">What's On</h2>
-          <Card>
-            <CardHeader>
-              <CardTitle>Event</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <Input type="text" placeholder="Event Title"/>
-              <Textarea placeholder="Event Description"/>
-              <Input type="date" placeholder="Event Date"/>
-              <Input type="url" placeholder="Image URL"/>
-              <Input type="url" placeholder="Link URL"/>
-            </CardContent>
-          </Card>
+          <Button
+            onClick={() => addItem("events")}
+            variant="outline"
+          >
+            <Plus/>Add Event
+          </Button>
+
+          {/* Event Cards */}
+          {formData.events.map((event, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <CardTitle>Event</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <Input
+                  type="text"
+                  placeholder="Event Title"
+                  value={event.title}
+                  onChange={(e) => handleChange(e, "events", index, "title")}/>
+                <Textarea
+                  placeholder="Event Description"
+                  value={event.description}
+                  onChange={(e) => handleChange(e, "events", index, "description")}/>
+                <Input
+                  type="date"
+                  placeholder="Event Date"
+                  value={event.date}
+                  onChange={(e) => handleChange(e, "events", index, "date")}/>
+                <Input
+                  type="url"
+                  placeholder="Image URL"
+                  value={event.imageURL}
+                  onChange={(e) => handleChange(e, "events", index, "imageURL")}/>
+                <Input
+                  type="url"
+                  placeholder="Link URL"
+                  value={event.link}
+                  onChange={(e) => handleChange(e, "events", index, "link")}/>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </CardContent>
     </Card>
