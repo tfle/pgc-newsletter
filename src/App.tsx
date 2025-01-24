@@ -14,13 +14,44 @@ function App() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
+        <CardTitle>PGC Newsletter</CardTitle>
       </CardHeader>
-      <CardContent>
-        <Label htmlFor="email">Your email address</Label>
-        <Input type="email" placeholder="Email"/>
-        <Label htmlFor="message">Your Message</Label>
-        <Textarea placeholder="Type your message here." id="message"/>
+      <CardContent className="space-y-4">
+        <div className="space-y-4">
+          <Label htmlFor="newsletterMonth">Newsletter Month</Label>
+          <Input type="text" placeholder="e.g. January"/>
+          <Label htmlFor="message">President's Message</Label>
+          <Textarea id="message"/>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-lg font-medium">Highlights</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle>Update</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Input type="text" placeholder="Title"/>
+              <Textarea placeholder="Description"/>
+              <Input type="url" placeholder="Image URL"/>
+              <Input type="url" placeholder="Link URL"/>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="space-y-4">
+          <h2 className="text-lg font-medium">What's On</h2>
+          <Card>
+            <CardHeader>
+              <CardTitle>Event</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Input type="text" placeholder="Event Title"/>
+              <Textarea placeholder="Event Description"/>
+              <Input type="date" placeholder="Event Date"/>
+              <Input type="url" placeholder="Image URL"/>
+              <Input type="url" placeholder="Link URL"/>
+            </CardContent>
+          </Card>
+        </div>
       </CardContent>
     </Card>
   )
