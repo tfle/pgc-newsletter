@@ -6,15 +6,36 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label"
+import {Input} from "@/components/ui/input"
+import {Textarea} from "@/components/ui/textarea";
+import {Label} from "@/components/ui/label"
 import {Button} from "@/components/ui/button.tsx";
 import {Plus} from "lucide-react";
 
+interface Highlight {
+  title: string;
+  description: string;
+  imageURL: string;
+  link: string;
+}
+
+interface Event {
+  title: string;
+  description: string;
+  date: string;
+  imageURL: string;
+  link: string;
+}
+
+interface FormData {
+  month: string;
+  presidentMessage: string;
+  highlights: Highlight[];
+  events: Event[];
+}
 
 function App() {
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = React.useState<FormData>({
     month: "",
     presidentMessage: "",
     highlights: [{
@@ -32,8 +53,19 @@ function App() {
     }]
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>, section: string) => {
-    setFormData({...formData, [section]: e.target.value})
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    section: keyof FormData,
+    index?: number,
+    field?: keyof (Highlight | Event)
+  )=> {
+    if (index !== undefined && field !== undefined) {
+      const newData = {...formData};
+      (newData[section] as (Highlight | Event)[])[index][field] = e.target.value;
+      setFormData(newData);
+    } else {
+      setFormData({...formData, [section]: e.target.value})
+    }
     console.log(formData)
   }
 
@@ -88,18 +120,22 @@ function App() {
                 <Input
                   type="text"
                   placeholder="Title"
-                  value={highlight.title}/>
+                  value={highlight.title}
+                  onChange={(e) => handleChange(e, "highlights"  , index, "title")}/>
                 <Textarea
                   placeholder="Description"
-                  value={highlight.description}/>
+                  value={highlight.description}
+                  onChange={(e) => handleChange(e, "highlights"  , index, "description")}/>
                 <Input
                   type="url"
                   placeholder="Image URL"
-                  value={highlight.imageURL}/>
+                  value={highlight.imageURL}
+                  onChange={(e) => handleChange(e, "highlights"  , index, "imageURL")}/>
                 <Input
                   type="url"
                   placeholder="Link URL"
-                  value={highlight.link}/>
+                  value={highlight.link}
+                  onChange={(e) => handleChange(e, "highlights", index, "link")}/>
               </CardContent>
             </Card>
           ))}
