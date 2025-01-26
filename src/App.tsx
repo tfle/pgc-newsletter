@@ -182,7 +182,7 @@ function App() {
               <CardContent className="space-y-4">
                 <div className="flex justify-end">
                   <Button
-                    onClick={() => removeItem("highlights", index)}
+                    onClick={() => removeItem("events", index)}
                     variant="ghost"
                   >
                     <Trash2/>
