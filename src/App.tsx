@@ -33,6 +33,14 @@ function App() {
     ],
   });
 
+  const [previewHtml, setPreviewHtml] = React.useState("");
+
+  React.useEffect(() => {
+    const mjmlString = generateMJML(formData);
+    const { html } = mjml2html(mjmlString);
+    setPreviewHtml(html);
+  }, [formData]);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     section: keyof FormData,
@@ -84,16 +92,9 @@ function App() {
     setFormData(newData);
   };
 
-  const mjmlString = generateMJML(formData);
-  const { html } = mjml2html(mjmlString);
-  console.log(html);
-
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>PGC Newsletter</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4">
+    <div className="flex w-full h-screen">
+      <div className="w-1/2 p-4 overflow-y-auto border-r">
         {/* Basic Info */}
         <div className="space-y-4">
           <Label htmlFor="newsletterMonth">Newsletter Month</Label>
@@ -226,8 +227,12 @@ function App() {
             </Card>
           ))}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+      {/* Preview - Right Half */}
+      <div className="w-1/2 p-4 overflow-y-auto bg-gray-50">
+        <div dangerouslySetInnerHTML={{ __html: previewHtml }} />
+      </div>
+    </div>
   );
 }
 
