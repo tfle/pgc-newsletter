@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button.tsx";
 import { Plus, Trash2 } from "lucide-react";
 import { Highlight, Event, FormData } from "./types";
+import mjml2html from "mjml-browser";
+import { generateMJML } from "./generate-mjml";
 
 function App() {
   const [formData, setFormData] = React.useState<FormData>({
@@ -49,7 +51,6 @@ function App() {
     } else {
       setFormData({ ...formData, [section]: e.target.value });
     }
-    console.log(formData);
   };
 
   const addItem = (section: string) => {
@@ -82,6 +83,10 @@ function App() {
     }
     setFormData(newData);
   };
+
+  const mjmlString = generateMJML(formData);
+  const { html } = mjml2html(mjmlString);
+  console.log(html);
 
   return (
     <Card>
