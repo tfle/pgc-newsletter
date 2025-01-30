@@ -11,28 +11,7 @@ import {Textarea} from "@/components/ui/textarea";
 import {Label} from "@/components/ui/label"
 import {Button} from "@/components/ui/button.tsx";
 import {Plus, Trash2} from "lucide-react";
-
-interface Highlight {
-  title: string;
-  description: string;
-  imageURL: string;
-  link: string;
-}
-
-interface Event {
-  title: string;
-  description: string;
-  date: string;
-  imageURL: string;
-  link: string;
-}
-
-interface FormData {
-  month: string;
-  presidentMessage: string;
-  highlights: Highlight[];
-  events: Event[];
-}
+import { Highlight, Event, FormData } from "./types";
 
 function App() {
   const [formData, setFormData] = React.useState<FormData>({
