@@ -4,8 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button.tsx";
-import { Plus, Trash2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Toggle } from "@/components/ui/toggle";
+import { Plus, Trash2, Star } from "lucide-react";
 import { Highlight } from "./types";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "./generate-mjml";
@@ -19,6 +20,7 @@ function App() {
       description: "",
       imageUrl: "",
       link: "",
+      featured: false,
     },
   ]);
   const [previewHtml, setPreviewHtml] = React.useState("");
@@ -52,6 +54,7 @@ function App() {
       description: "",
       imageUrl: "",
       link: "",
+      featured: false,
     });
     setHighlights(newHighlights);
   };
@@ -97,13 +100,17 @@ function App() {
                 <CardTitle>Highlight {index + 1}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex justify-end">
+                <div>
                   <Button
                     onClick={() => removeHighlight(index)}
                     variant="ghost"
                   >
                     <Trash2 />
                   </Button>
+                  <Toggle>
+                    <Star />
+                    Feature
+                  </Toggle>
                 </div>
                 <Input
                   type="text"
