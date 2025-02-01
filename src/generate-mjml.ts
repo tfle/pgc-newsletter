@@ -36,7 +36,9 @@ export function generateMJML(formData: FormData): string {
             </mj-text>
           </mj-column>
           `
-              : ""
+              : `
+          <mj-column></mj-column>
+          `
           }
         </mj-section>
       `;
