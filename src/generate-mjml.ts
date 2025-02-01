@@ -1,5 +1,7 @@
 import { Event, FormData, Highlight } from "./types";
 
+const DEFAULT_IMAGE = "https://dummyimage.com/1920x1080/ec881d/fff";
+
 export function generateMJML(formData: FormData): string {
   const highlightsSection: string = formData.highlights
     .map((highlight: Highlight, index: number): string => {
@@ -9,7 +11,7 @@ export function generateMJML(formData: FormData): string {
         return `
         <mj-section>
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${highlight.imageURL}"
+            <mj-image fluid-on-mobile="true" src="${highlight.imageURL || DEFAULT_IMAGE}"
                       href="${highlight.link}"
                       alt="${highlight.title}"/>
             <mj-text mj-class="heading">
@@ -23,7 +25,7 @@ export function generateMJML(formData: FormData): string {
             nextHighlight
               ? `
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${nextHighlight.imageURL}"
+            <mj-image fluid-on-mobile="true" src="${nextHighlight.imageURL || DEFAULT_IMAGE}"
                       href="${nextHighlight.link}"
                       alt="${nextHighlight.title}"/>
             <mj-text mj-class="heading">
@@ -51,7 +53,7 @@ export function generateMJML(formData: FormData): string {
         return `
         <mj-section>
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${event.imageURL}"
+            <mj-image fluid-on-mobile="true" src="${event.imageURL || DEFAULT_IMAGE}"
                       href="${event.link}"
                       alt="${event.title}"/>
             <mj-text mj-class="heading">
@@ -66,7 +68,7 @@ export function generateMJML(formData: FormData): string {
             nextEvent
               ? `
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${nextEvent.imageURL}"
+            <mj-image fluid-on-mobile="true" src="${nextEvent.imageURL || DEFAULT_IMAGE}"
                       href="${nextEvent.link}"
                       alt="${nextEvent.title}"/>
             <mj-text mj-class="heading">
