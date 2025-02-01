@@ -6,90 +6,60 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button.tsx";
 import { Plus, Trash2 } from "lucide-react";
-import { Highlight, Event, FormData } from "./types";
+import { Highlight } from "./types";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "./generate-mjml";
 
 function App() {
-  const [formData, setFormData] = React.useState<FormData>({
-    month: "",
-    presidentMessage: "",
-    highlights: [
-      {
-        title: "",
-        description: "",
-        imageURL: "",
-        link: "",
-      },
-    ],
-    events: [
-      {
-        title: "",
-        description: "",
-        date: "",
-        imageURL: "",
-        link: "",
-      },
-    ],
-  });
-
+  const [month, setMonth] = React.useState("");
+  const [presidentMessage, setPresidentMessage] = React.useState("");
+  const [highlights, setHighlights] = React.useState<Highlight[]>([
+    {
+      title: "",
+      description: "",
+      imageUrl: "",
+      link: "",
+    },
+  ]);
   const [previewHtml, setPreviewHtml] = React.useState("");
 
   React.useEffect(() => {
+    const formData = {
+      month,
+      presidentMessage,
+      highlights,
+    };
+
     const mjmlString = generateMJML(formData);
     const { html } = mjml2html(mjmlString);
     setPreviewHtml(html);
-  }, [formData]);
+  }, [month, presidentMessage, highlights]);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-    section: keyof FormData,
-    index?: number,
-    field?: keyof Highlight | keyof Event,
+  const updateHighlight = (
+    index: number,
+    field: keyof Highlight,
+    value: string,
   ) => {
-    if (index !== undefined && field !== undefined) {
-      const newData = { ...formData };
-      if (section === "highlights") {
-        (newData.highlights[index] as Highlight)[field as keyof Highlight] =
-          e.target.value;
-      } else if (section === "events") {
-        (newData.events[index] as Event)[field as keyof Event] = e.target.value;
-      }
-      setFormData(newData);
-    } else {
-      setFormData({ ...formData, [section]: e.target.value });
-    }
+    const newHighlights = [...highlights];
+    newHighlights[index] = { ...newHighlights[index], [field]: value };
+    setHighlights(newHighlights);
   };
 
-  const addItem = (section: string) => {
-    const newData = { ...formData };
-    if (section === "highlights") {
-      newData.highlights.push({
-        title: "",
-        description: "",
-        imageURL: "",
-        link: "",
-      });
-    } else if (section === "events") {
-      newData.events.push({
-        title: "",
-        description: "",
-        date: "",
-        imageURL: "",
-        link: "",
-      });
-    }
-    setFormData(newData);
+  const addHighlight = () => {
+    const newHighlights = [...highlights];
+    newHighlights.push({
+      title: "",
+      description: "",
+      imageUrl: "",
+      link: "",
+    });
+    setHighlights(newHighlights);
   };
 
-  const removeItem = (section: string, index: number) => {
-    const newData = { ...formData };
-    if (section === "highlights") {
-      newData.highlights.splice(index, 1);
-    } else if (section === "events") {
-      newData.events.splice(index, 1);
-    }
-    setFormData(newData);
+  const removeHighlight = (index: number) => {
+    const newHighlights = [...highlights];
+    newHighlights.splice(index, 1);
+    setHighlights(newHighlights);
   };
 
   return (
@@ -101,35 +71,35 @@ function App() {
           <Input
             type="text"
             placeholder="e.g. January"
-            value={formData.month}
-            onChange={(e) => handleChange(e, "month")}
+            value={month}
+            onChange={(e) => setMonth(e.target.value)}
           />
           <Label htmlFor="message">President's Message</Label>
           <Textarea
             id="message"
-            value={formData.presidentMessage}
-            onChange={(e) => handleChange(e, "presidentMessage")}
+            value={presidentMessage}
+            onChange={(e) => setPresidentMessage(e.target.value)}
           />
         </div>
 
         {/* Highlights */}
         <div className="space-y-4">
           <h2 className="text-lg font-medium">Highlights</h2>
-          <Button onClick={() => addItem("highlights")} variant="outline">
+          <Button onClick={addHighlight} variant="outline">
             <Plus />
             Add Highlight
           </Button>
 
           {/* Highlight Cards */}
-          {formData.highlights.map((highlight, index) => (
+          {highlights.map((highlight, index) => (
             <Card key={index}>
               <CardHeader>
-                <CardTitle>Update</CardTitle>
+                <CardTitle>Highlight {index + 1}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex justify-end">
                   <Button
-                    onClick={() => removeItem("highlights", index)}
+                    onClick={() => removeHighlight(index)}
                     variant="ghost"
                   >
                     <Trash2 />
@@ -140,94 +110,38 @@ function App() {
                   placeholder="Title"
                   value={highlight.title}
                   onChange={(e) =>
-                    handleChange(e, "highlights", index, "title")
+                    updateHighlight(index, "title", e.target.value)
                   }
                 />
                 <Textarea
                   placeholder="Description"
                   value={highlight.description}
                   onChange={(e) =>
-                    handleChange(e, "highlights", index, "description")
+                    updateHighlight(index, "description", e.target.value)
                   }
                 />
                 <Input
                   type="url"
                   placeholder="Image URL"
-                  value={highlight.imageURL}
+                  value={highlight.imageUrl}
                   onChange={(e) =>
-                    handleChange(e, "highlights", index, "imageURL")
+                    updateHighlight(index, "imageUrl", e.target.value)
                   }
                 />
                 <Input
                   type="url"
                   placeholder="Link URL"
                   value={highlight.link}
-                  onChange={(e) => handleChange(e, "highlights", index, "link")}
-                />
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Events Section */}
-        <div className="space-y-4">
-          <h2 className="text-lg font-medium">What's On</h2>
-          <Button onClick={() => addItem("events")} variant="outline">
-            <Plus />
-            Add Event
-          </Button>
-
-          {/* Event Cards */}
-          {formData.events.map((event, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>Event</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex justify-end">
-                  <Button
-                    onClick={() => removeItem("events", index)}
-                    variant="ghost"
-                  >
-                    <Trash2 />
-                  </Button>
-                </div>
-                <Input
-                  type="text"
-                  placeholder="Event Title"
-                  value={event.title}
-                  onChange={(e) => handleChange(e, "events", index, "title")}
-                />
-                <Textarea
-                  placeholder="Event Description"
-                  value={event.description}
                   onChange={(e) =>
-                    handleChange(e, "events", index, "description")
+                    updateHighlight(index, "link", e.target.value)
                   }
-                />
-                <Input
-                  type="date"
-                  placeholder="Event Date"
-                  value={event.date}
-                  onChange={(e) => handleChange(e, "events", index, "date")}
-                />
-                <Input
-                  type="url"
-                  placeholder="Image URL"
-                  value={event.imageURL}
-                  onChange={(e) => handleChange(e, "events", index, "imageURL")}
-                />
-                <Input
-                  type="url"
-                  placeholder="Link URL"
-                  value={event.link}
-                  onChange={(e) => handleChange(e, "events", index, "link")}
                 />
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
+
       {/* Preview - Right Half */}
       <div className="w-1/2 p-4 overflow-y-auto bg-gray-50">
         <div dangerouslySetInnerHTML={{ __html: previewHtml }} />

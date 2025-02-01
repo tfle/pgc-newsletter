@@ -1,4 +1,4 @@
-import { Event, FormData, Highlight } from "./types";
+import { Highlight, FormData } from "./types";
 
 const DEFAULT_IMAGE = "https://dummyimage.com/1920x1080/ec881d/fff";
 
@@ -11,7 +11,7 @@ export function generateMJML(formData: FormData): string {
         return `
         <mj-section>
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${highlight.imageURL || DEFAULT_IMAGE}"
+            <mj-image fluid-on-mobile="true" src="${highlight.imageUrl || DEFAULT_IMAGE}"
                       href="${highlight.link}"
                       alt="${highlight.title}"/>
             <mj-text mj-class="heading">
@@ -25,7 +25,7 @@ export function generateMJML(formData: FormData): string {
             nextHighlight
               ? `
           <mj-column>
-            <mj-image fluid-on-mobile="true" src="${nextHighlight.imageURL || DEFAULT_IMAGE}"
+            <mj-image fluid-on-mobile="true" src="${nextHighlight.imageUrl || DEFAULT_IMAGE}"
                       href="${nextHighlight.link}"
                       alt="${nextHighlight.title}"/>
             <mj-text mj-class="heading">
@@ -44,50 +44,6 @@ export function generateMJML(formData: FormData): string {
       `;
       }
       return ""; // Skip odd-numbered highlights as they're handled with the previous even highlight
-    })
-    .join("");
-
-  const eventsSection: string = formData.events
-    .map((event: Event, index: number): string => {
-      if (index % 2 === 0) {
-        // Start new section for every two events
-        const nextEvent = formData.events[index + 1];
-        return `
-        <mj-section>
-          <mj-column>
-            <mj-image fluid-on-mobile="true" src="${event.imageURL || DEFAULT_IMAGE}"
-                      href="${event.link}"
-                      alt="${event.title}"/>
-            <mj-text mj-class="heading">
-              <a href="${event.link}" target="_blank">${event.title}</a>
-            </mj-text>
-            <mj-text mj-class="body">
-              ${event.description}
-              <p style="color:#ec881d">${event.date}</p>
-            </mj-text>
-          </mj-column>
-          ${
-            nextEvent
-              ? `
-          <mj-column>
-            <mj-image fluid-on-mobile="true" src="${nextEvent.imageURL || DEFAULT_IMAGE}"
-                      href="${nextEvent.link}"
-                      alt="${nextEvent.title}"/>
-            <mj-text mj-class="heading">
-              <a href="${nextEvent.link}" target="_blank">${nextEvent.title}</a>
-            </mj-text>
-            <mj-text mj-class="body">
-              ${nextEvent.description}
-              <p style="color:#ec881d">${nextEvent.date}</p>
-            </mj-text>
-          </mj-column>
-          `
-              : ""
-          }
-        </mj-section>
-      `;
-      }
-      return ""; // Skip odd-numbered events as they're handled with the previous even event
     })
     .join("");
 
@@ -149,17 +105,7 @@ export function generateMJML(formData: FormData): string {
             </mj-column>
         </mj-section>
 
-        <!-- Highlights Content -->
         ${highlightsSection}
-
-        <!-- What's On Section -->
-        <mj-section>
-            <mj-column>
-                <mj-text mj-class="section-heading">What's On</mj-text>
-            </mj-column>
-        </mj-section>
-
-        ${eventsSection}
 
         <!-- Quick Links -->
         <mj-section>
