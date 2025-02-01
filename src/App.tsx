@@ -66,92 +66,108 @@ function App() {
   };
 
   return (
-    <div className="flex w-full h-screen">
-      <div className="w-1/2 p-4 overflow-y-auto border-r">
-        {/* Basic Info */}
-        <div className="space-y-4">
-          <Label htmlFor="newsletterMonth">Newsletter Month</Label>
-          <Input
-            type="text"
-            placeholder="e.g. January"
-            value={month}
-            onChange={(e) => setMonth(e.target.value)}
-          />
-          <Label htmlFor="message">President's Message</Label>
-          <Textarea
-            id="message"
-            value={presidentMessage}
-            onChange={(e) => setPresidentMessage(e.target.value)}
-          />
-        </div>
+    <div className="flex w-full h-screen bg-gray-100">
+      {/* Left Section: Editor */}
+      <div className="w-1/2 p-6 overflow-y-auto bg-white shadow-md border-r">
+        <h1 className="text-2xl font-bold mb-6">PGC Newsletter Editor</h1>
 
-        {/* Highlights */}
-        <div className="space-y-4">
-          <h2 className="text-lg font-medium">Highlights</h2>
-          <Button onClick={addHighlight} variant="outline">
-            <Plus />
-            Add Highlight
-          </Button>
+        <div className="space-y-6">
+          <div>
+            <Label htmlFor="newsletterMonth">Newsletter Month</Label>
+            <Input
+              type="text"
+              placeholder="e.g. January"
+              value={month}
+              onChange={(e) => setMonth(e.target.value)}
+            />
+          </div>
+          <div>
+            <Label htmlFor="message">President's Message</Label>
+            <Textarea
+              id="message"
+              value={presidentMessage}
+              onChange={(e) => setPresidentMessage(e.target.value)}
+            />
+          </div>
 
-          {/* Highlight Cards */}
-          {highlights.map((highlight, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>Highlight {index + 1}</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <Button
-                    onClick={() => removeHighlight(index)}
-                    variant="ghost"
-                  >
-                    <Trash2 />
-                  </Button>
-                  <Toggle>
-                    <Star />
-                    Feature
-                  </Toggle>
-                </div>
-                <Input
-                  type="text"
-                  placeholder="Title"
-                  value={highlight.title}
-                  onChange={(e) =>
-                    updateHighlight(index, "title", e.target.value)
-                  }
-                />
-                <Textarea
-                  placeholder="Description"
-                  value={highlight.description}
-                  onChange={(e) =>
-                    updateHighlight(index, "description", e.target.value)
-                  }
-                />
-                <Input
-                  type="url"
-                  placeholder="Image URL"
-                  value={highlight.imageUrl}
-                  onChange={(e) =>
-                    updateHighlight(index, "imageUrl", e.target.value)
-                  }
-                />
-                <Input
-                  type="url"
-                  placeholder="Link URL"
-                  value={highlight.link}
-                  onChange={(e) =>
-                    updateHighlight(index, "link", e.target.value)
-                  }
-                />
-              </CardContent>
-            </Card>
-          ))}
+          {/* Highlights */}
+          <div className="space-y-4">
+            <div className="flex justify-between items-center">
+              <h2 className="text-lg font-semibold">Highlights</h2>
+              <Button
+                onClick={addHighlight}
+                variant="outline"
+                className="flex items-center gap-2"
+              >
+                <Plus size={16} />
+                Add Highlight
+              </Button>
+            </div>
+
+            {/* Highlight Cards */}
+            {highlights.map((highlight, index) => (
+              <Card key={index} className="bg-gray-50">
+                <CardHeader className="flex flex-row items-center justify-between pb-2">
+                  <CardTitle>Highlight {index + 1}</CardTitle>
+                  <div className="flex items-center gap-2">
+                    <Toggle>
+                      <Star />
+                      Feature
+                    </Toggle>
+                    <Button
+                      onClick={() => removeHighlight(index)}
+                      variant="ghost"
+                      size="icon"
+                    >
+                      <Trash2 />
+                    </Button>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <Input
+                    type="text"
+                    placeholder="Title"
+                    value={highlight.title}
+                    onChange={(e) =>
+                      updateHighlight(index, "title", e.target.value)
+                    }
+                  />
+                  <Textarea
+                    placeholder="Description"
+                    value={highlight.description}
+                    onChange={(e) =>
+                      updateHighlight(index, "description", e.target.value)
+                    }
+                  />
+                  <Input
+                    type="url"
+                    placeholder="Image URL"
+                    value={highlight.imageUrl}
+                    onChange={(e) =>
+                      updateHighlight(index, "imageUrl", e.target.value)
+                    }
+                  />
+                  <Input
+                    type="url"
+                    placeholder="Link URL"
+                    value={highlight.link}
+                    onChange={(e) =>
+                      updateHighlight(index, "link", e.target.value)
+                    }
+                  />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Preview - Right Half */}
-      <div className="w-1/2 p-4 overflow-y-auto bg-gray-50">
-        <div dangerouslySetInnerHTML={{ __html: previewHtml }} />
+      {/* Right Section: Preview */}
+      <div className="w-1/2 p-6 overflow-y-auto bg-gray-50">
+        <h2 className="text-lg font-semibold mb-4">Email Preview</h2>
+        <div className="border bg-white p-4 rounded-lg shadow-md">
+          <div dangerouslySetInnerHTML={{ __html: previewHtml }} />
+        </div>
       </div>
     </div>
   );
