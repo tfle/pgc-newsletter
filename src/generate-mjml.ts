@@ -3,11 +3,36 @@ import { Highlight, FormData } from "./types";
 const DEFAULT_IMAGE = "https://dummyimage.com/1920x1080/ec881d/fff";
 
 export function generateMJML(formData: FormData): string {
-  const highlightsSection: string = formData.highlights
+  const featuredHighlight = formData.highlights.find(
+    (highlight) => highlight.featured,
+  );
+
+  const featuredHighlightSection = featuredHighlight
+    ? `<mj-section>
+          <mj-column>
+            <mj-image fluid-on-mobile="true" src="${featuredHighlight.imageUrl || DEFAULT_IMAGE}"
+                      href="${featuredHighlight.link}"
+                      alt="${featuredHighlight.title}"/>
+            <mj-text mj-class="heading">
+              <a href="${featuredHighlight.link}" target="_blank">${featuredHighlight.title}</a>
+            </mj-text>
+            <mj-text mj-class="body">
+              ${featuredHighlight.description}
+            </mj-text>
+          </mj-column>
+        </mj-section>`
+    : "";
+
+  // Filter out the featured highlight
+  const highlights = formData.highlights.filter(
+    (highlight) => !highlight.featured,
+  );
+
+  const highlightsSection: string = highlights
     .map((highlight: Highlight, index: number): string => {
       if (index % 2 === 0) {
         // Start new section for every two highlights
-        const nextHighlight: Highlight = formData.highlights[index + 1];
+        const nextHighlight: Highlight = highlights[index + 1];
         return `
         <mj-section>
           <mj-column>
@@ -105,6 +130,7 @@ export function generateMJML(formData: FormData): string {
             </mj-column>
         </mj-section>
 
+        ${featuredHighlightSection}
         ${highlightsSection}
 
         <!-- Quick Links -->

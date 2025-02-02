@@ -40,10 +40,18 @@ function App() {
   const updateHighlight = (
     index: number,
     field: keyof Highlight,
-    value: string,
+    value: string | boolean,
   ) => {
-    const newHighlights = [...highlights];
-    newHighlights[index] = { ...newHighlights[index], [field]: value };
+    let newHighlights = [...highlights];
+
+    if (field === "featured" && value === true) {
+      newHighlights = newHighlights.map((h, i) => ({
+        ...h,
+        featured: i === index,
+      }));
+    } else {
+      newHighlights[index] = { ...newHighlights[index], [field]: value };
+    }
     setHighlights(newHighlights);
   };
 
@@ -110,9 +118,14 @@ function App() {
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle>Highlight {index + 1}</CardTitle>
                   <div className="flex items-center gap-2">
-                    <Toggle>
+                    <Toggle
+                      pressed={highlight.featured}
+                      onPressedChange={(pressed) =>
+                        updateHighlight(index, "featured", pressed)
+                      }
+                    >
                       <Star />
-                      Feature
+                      {highlight.featured ? "Featured" : "Feature"}
                     </Toggle>
                     <Button
                       onClick={() => removeHighlight(index)}

@@ -3,7 +3,7 @@ export interface Highlight {
   description: string;
   imageUrl: string;
   link: string;
-  featured: false;
+  featured: boolean;
 }
 
 export interface FormData {
