@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Toggle } from "@/components/ui/toggle";
-import { Plus, Trash2, Star } from "lucide-react";
+import { Plus, Trash2, Star, ArrowUp, ArrowDown } from "lucide-react";
 import { Highlight } from "./types";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "./generate-mjml";
@@ -42,16 +42,8 @@ function App() {
     field: keyof Highlight,
     value: string | boolean,
   ) => {
-    let newHighlights = [...highlights];
-
-    if (field === "featured" && value === true) {
-      newHighlights = newHighlights.map((h, i) => ({
-        ...h,
-        featured: i === index,
-      }));
-    } else {
-      newHighlights[index] = { ...newHighlights[index], [field]: value };
-    }
+    const newHighlights = [...highlights];
+    newHighlights[index] = { ...newHighlights[index], [field]: value };
     setHighlights(newHighlights);
   };
 
@@ -70,6 +62,25 @@ function App() {
   const removeHighlight = (index: number) => {
     const newHighlights = [...highlights];
     newHighlights.splice(index, 1);
+    setHighlights(newHighlights);
+  };
+
+  const moveHighlightUp = (index: number) => {
+    if (index === 0) return; // Can't move the first item up
+    const newHighlights = [...highlights];
+    const [removed] = newHighlights.splice(index, 1);
+    newHighlights.splice(index - 1, 0, removed); // Insert it before the previous item
+    setHighlights(newHighlights);
+  };
+
+  const moveHighlightDown = (index: number) => {
+    if (index === highlights.length - 1) return; // Can't move the last item down
+    const newHighlights = [...highlights];
+    const [removed] = newHighlights.splice(index, 1);
+    if (index === 0) {
+      removed.featured = false; // Only the first highlight can be featured
+    }
+    newHighlights.splice(index + 1, 0, removed); // Insert it after the next item
     setHighlights(newHighlights);
   };
 
@@ -118,15 +129,17 @@ function App() {
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle>Highlight {index + 1}</CardTitle>
                   <div className="flex items-center gap-2">
-                    <Toggle
-                      pressed={highlight.featured}
-                      onPressedChange={(pressed) =>
-                        updateHighlight(index, "featured", pressed)
-                      }
-                    >
-                      <Star />
-                      {highlight.featured ? "Featured" : "Feature"}
-                    </Toggle>
+                    {index === 0 && (
+                      <Toggle
+                        pressed={highlight.featured}
+                        onPressedChange={(pressed) =>
+                          updateHighlight(index, "featured", pressed)
+                        }
+                      >
+                        <Star />
+                        {highlight.featured ? "Featured" : "Feature"}
+                      </Toggle>
+                    )}
                     <Button
                       onClick={() => removeHighlight(index)}
                       variant="ghost"
@@ -168,6 +181,27 @@ function App() {
                       updateHighlight(index, "link", e.target.value)
                     }
                   />
+                  {/* Move Up/Down Buttons */}
+                  <div className="flex justify-end gap-2 mt-4">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => moveHighlightUp(index)}
+                      disabled={index === 0} // Disable the "Move Up" button for the first highlight
+                    >
+                      <ArrowUp size={16} />
+                      Move Up
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => moveHighlightDown(index)}
+                      disabled={index === highlights.length - 1} // Disable the "Move Down" button for the last highlight
+                    >
+                      <ArrowDown size={16} />
+                      Move Down
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
