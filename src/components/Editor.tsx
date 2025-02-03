@@ -108,7 +108,7 @@ export const Editor = ({
               variant="outline"
               className="flex items-center gap-2"
             >
-              <Plus size={16} />
+              <Plus />
               Add Highlight
             </Button>
           </div>
@@ -117,8 +117,11 @@ export const Editor = ({
           {highlights.map((highlight, index) => (
             <Card key={index} className="bg-gray-50">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle>Highlight {index + 1}</CardTitle>
-                <div className="flex items-center gap-2">
+                <CardTitle>
+                  <span className="text-gray-500 mr-2">#{index + 1}</span>{" "}
+                  {highlight.title || "Untitled"}
+                </CardTitle>
+                <div className="flex gap-2">
                   {index === 0 && (
                     <Toggle
                       pressed={highlight.featured}
@@ -172,14 +175,14 @@ export const Editor = ({
                   }
                 />
                 {/* Move Up/Down Buttons */}
-                <div className="flex justify-end gap-2 mt-4">
+                <div className="flex justify-end gap-2">
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={() => moveHighlightUp(index)}
                     disabled={index === 0} // Disable the "Move Up" button for the first highlight
                   >
-                    <ArrowUp size={16} />
+                    <ArrowUp />
                     Move Up
                   </Button>
                   <Button
@@ -188,7 +191,7 @@ export const Editor = ({
                     onClick={() => moveHighlightDown(index)}
                     disabled={index === highlights.length - 1} // Disable the "Move Down" button for the last highlight
                   >
-                    <ArrowDown size={16} />
+                    <ArrowDown />
                     Move Down
                   </Button>
                 </div>
