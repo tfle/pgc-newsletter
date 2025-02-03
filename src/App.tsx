@@ -4,6 +4,7 @@ import { Highlight } from "./types";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "./generate-mjml";
 import { Editor } from "@/components/Editor.tsx";
+import { Preview } from "@/components/Preview.tsx";
 
 function App() {
   const [month, setMonth] = React.useState("");
@@ -47,10 +48,7 @@ function App() {
 
       {/* Right Section: Preview */}
       <div className="w-1/2 p-6 overflow-y-auto bg-gray-50">
-        <h2 className="text-lg font-semibold mb-4">Email Preview</h2>
-        <div className="border bg-white p-4 rounded-lg shadow-md">
-          <div dangerouslySetInnerHTML={{ __html: previewHtml }} />
-        </div>
+        <Preview previewHtml={previewHtml} />
       </div>
     </div>
   );
