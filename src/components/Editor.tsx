@@ -1,17 +1,12 @@
-import { Label } from "@/components/ui/label.tsx";
-import { Input } from "@/components/ui/input.tsx";
-import { Textarea } from "@/components/ui/textarea.tsx";
-import { Button } from "@/components/ui/button.tsx";
-import { ArrowDown, ArrowUp, Plus, Star, Trash2 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card.tsx";
-import { Toggle } from "@/components/ui/toggle.tsx";
 import React from "react";
-import { createHighlightActions } from "@/createHighlightActions.ts";
+import { ArrowDown, ArrowUp, Plus, Star, Trash2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Toggle } from "@/components/ui/toggle";
+import { createHighlightActions } from "@/createHighlightActions";
 import { Highlight } from "@/types";
 
 interface EditorProps {
