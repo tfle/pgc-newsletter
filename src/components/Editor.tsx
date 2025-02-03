@@ -11,7 +11,8 @@ import {
 } from "@/components/ui/card.tsx";
 import { Toggle } from "@/components/ui/toggle.tsx";
 import React from "react";
-import { Highlight } from "../types";
+import { createHighlightActions } from "@/createHighlightActions.ts";
+import { Highlight } from "@/types";
 
 interface EditorProps {
   month: string;
@@ -30,52 +31,7 @@ export const Editor = ({
   highlights,
   setHighlights,
 }: EditorProps) => {
-  const updateHighlight = (
-    index: number,
-    field: keyof Highlight,
-    value: string | boolean,
-  ) => {
-    const newHighlights = [...highlights];
-    newHighlights[index] = { ...newHighlights[index], [field]: value };
-    setHighlights(newHighlights);
-  };
-
-  const addHighlight = () => {
-    const newHighlights = [...highlights];
-    newHighlights.push({
-      title: "",
-      description: "",
-      imageUrl: "",
-      link: "",
-      featured: false,
-    });
-    setHighlights(newHighlights);
-  };
-
-  const removeHighlight = (index: number) => {
-    const newHighlights = [...highlights];
-    newHighlights.splice(index, 1);
-    setHighlights(newHighlights);
-  };
-
-  const moveHighlightUp = (index: number) => {
-    if (index === 0) return; // Can't move the first item up
-    const newHighlights = [...highlights];
-    const [removed] = newHighlights.splice(index, 1);
-    newHighlights.splice(index - 1, 0, removed); // Insert it before the previous item
-    setHighlights(newHighlights);
-  };
-
-  const moveHighlightDown = (index: number) => {
-    if (index === highlights.length - 1) return; // Can't move the last item down
-    const newHighlights = [...highlights];
-    const [removed] = newHighlights.splice(index, 1);
-    if (index === 0) {
-      removed.featured = false; // Only the first highlight can be featured
-    }
-    newHighlights.splice(index + 1, 0, removed); // Insert it after the next item
-    setHighlights(newHighlights);
-  };
+  const highlightActions = createHighlightActions(highlights, setHighlights);
 
   return (
     <>
@@ -104,7 +60,7 @@ export const Editor = ({
           <div className="flex justify-between items-center">
             <h2 className="text-lg font-semibold">Highlights</h2>
             <Button
-              onClick={addHighlight}
+              onClick={highlightActions.addHighlight}
               variant="outline"
               className="flex items-center gap-2"
             >
@@ -126,7 +82,11 @@ export const Editor = ({
                     <Toggle
                       pressed={highlight.featured}
                       onPressedChange={(pressed) =>
-                        updateHighlight(index, "featured", pressed)
+                        highlightActions.updateHighlight(
+                          index,
+                          "featured",
+                          pressed,
+                        )
                       }
                     >
                       <Star />
@@ -134,7 +94,7 @@ export const Editor = ({
                     </Toggle>
                   )}
                   <Button
-                    onClick={() => removeHighlight(index)}
+                    onClick={() => highlightActions.removeHighlight(index)}
                     variant="ghost"
                     size="icon"
                   >
@@ -148,14 +108,22 @@ export const Editor = ({
                   placeholder="Title"
                   value={highlight.title}
                   onChange={(e) =>
-                    updateHighlight(index, "title", e.target.value)
+                    highlightActions.updateHighlight(
+                      index,
+                      "title",
+                      e.target.value,
+                    )
                   }
                 />
                 <Textarea
                   placeholder="Description"
                   value={highlight.description}
                   onChange={(e) =>
-                    updateHighlight(index, "description", e.target.value)
+                    highlightActions.updateHighlight(
+                      index,
+                      "description",
+                      e.target.value,
+                    )
                   }
                 />
                 <Input
@@ -163,7 +131,11 @@ export const Editor = ({
                   placeholder="Image URL"
                   value={highlight.imageUrl}
                   onChange={(e) =>
-                    updateHighlight(index, "imageUrl", e.target.value)
+                    highlightActions.updateHighlight(
+                      index,
+                      "imageUrl",
+                      e.target.value,
+                    )
                   }
                 />
                 <Input
@@ -171,7 +143,11 @@ export const Editor = ({
                   placeholder="Link URL"
                   value={highlight.link}
                   onChange={(e) =>
-                    updateHighlight(index, "link", e.target.value)
+                    highlightActions.updateHighlight(
+                      index,
+                      "link",
+                      e.target.value,
+                    )
                   }
                 />
                 {/* Move Up/Down Buttons */}
@@ -179,7 +155,7 @@ export const Editor = ({
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => moveHighlightUp(index)}
+                    onClick={() => highlightActions.moveHighlightUp(index)}
                     disabled={index === 0} // Disable the "Move Up" button for the first highlight
                   >
                     <ArrowUp />
@@ -188,7 +164,7 @@ export const Editor = ({
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => moveHighlightDown(index)}
+                    onClick={() => highlightActions.moveHighlightDown(index)}
                     disabled={index === highlights.length - 1} // Disable the "Move Down" button for the last highlight
                   >
                     <ArrowDown />

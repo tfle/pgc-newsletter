@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import { Highlight } from "./types";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "./generate-mjml";
 import { Editor } from "@/components/Editor.tsx";
 import { Preview } from "@/components/Preview.tsx";
+import { Highlight } from "@/types.ts";
 
 function App() {
   const [month, setMonth] = React.useState("");
