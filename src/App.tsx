@@ -2,10 +2,11 @@ import React from "react";
 import mjml2html from "mjml-browser";
 import { generateMJML } from "@/generateMJML";
 import { Editor } from "@/components/Editor";
+import { Header } from "@/components/Header";
 import { Preview } from "@/components/Preview";
 import { Highlight } from "@/types";
 import { Eye, Pencil } from "lucide-react";
-import { Button } from "@/components/ui/button.tsx";
+import { Button } from "@/components/ui/button";
 
 function App() {
   const [month, setMonth] = React.useState("");
@@ -50,18 +51,9 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const downloadHtml = () => {
-    const blob = new Blob([previewHtml], { type: "text/html" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "newsletter.html";
-    link.click();
-    URL.revokeObjectURL(url);
-  };
-
   return (
     <>
+      <Header previewHtml={previewHtml} />
       {!showPreview ? (
         // Editor Section
         <div className="flex flex-col md:flex-row w-full h-screen bg-white">
