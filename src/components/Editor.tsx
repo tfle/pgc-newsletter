@@ -30,7 +30,6 @@ export const Editor = ({
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-6">PGC Newsletter Editor</h1>
       <div className="space-y-6">
         <div>
           <Label htmlFor="newsletterMonth">Newsletter Month</Label>
