@@ -4,7 +4,7 @@ import { generateMJML } from "@/generateMJML";
 import { Editor } from "@/components/Editor";
 import { Preview } from "@/components/Preview";
 import { Highlight } from "@/types";
-import { Download, Plus } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 
 function App() {
