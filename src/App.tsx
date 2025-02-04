@@ -56,11 +56,17 @@ function App() {
       <Header previewHtml={previewHtml} />
       {!showPreview ? (
         // Editor Section
-        <div className="flex flex-col md:flex-row w-full h-screen bg-white">
+        <div
+          className="flex flex-col md:flex-row w-full h-screen bg-white"
+          style={{
+            height: "calc(100vh - env(safe-area-inset-bottom))",
+            paddingBottom: "env(safe-area-inset-bottom)",
+          }}
+        >
           {/* Left Section: Editor */}
           <div className="w-full md:w-1/2 p-6 overflow-y-auto border-r">
             <div className="flex justify-between items-center mb-6">
-              <h1 className="text-2xl font-bold">PGC Newsletter Editor</h1>
+              <h2 className="text-lg font-semibold">Newsletter Editor</h2>
               <Button
                 onClick={() => setShowPreview(true)}
                 className="md:hidden"
