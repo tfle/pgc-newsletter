@@ -34,6 +34,22 @@ function App() {
     setPreviewHtml(html);
   }, [month, presidentMessage, highlights]);
 
+  // Resize listener to reset the "editor/preview" view
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        // Automatically revert to split view on larger screens
+        setShowPreview(false);
+      }
+    };
+
+    // Attach listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const downloadHtml = () => {
     const blob = new Blob([previewHtml], { type: "text/html" });
     const url = URL.createObjectURL(blob);
