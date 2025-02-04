@@ -44,9 +44,9 @@ function App() {
   };
 
   return (
-    <div className="flex w-full h-screen bg-gray-100">
+    <div className="flex flex-col md:flex-row w-full h-screen bg-white">
       {/* Left Section: Editor */}
-      <div className="w-1/2 p-6 overflow-y-auto bg-white shadow-md border-r">
+      <div className="w-full md:w-1/2 p-6 overflow-y-auto border-r">
         <Editor
           month={month}
           setMonth={setMonth}
@@ -58,7 +58,7 @@ function App() {
       </div>
 
       {/* Right Section: Preview */}
-      <div className="w-1/2 p-6 overflow-y-auto bg-gray-50">
+      <div className="w-full md:w-1/2 p-6 overflow-y-auto bg-gray-50 hidden md:block">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg font-semibold">Email Preview</h2>
           <Button onClick={downloadHtml} variant="outline">
