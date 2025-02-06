@@ -5,8 +5,6 @@ import { Editor } from "@/components/Editor";
 import { Header } from "@/components/Header";
 import { Preview } from "@/components/Preview";
 import { Highlight } from "@/types";
-import { Eye, Pencil } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 function App() {
   const [month, setMonth] = React.useState("");
@@ -21,7 +19,7 @@ function App() {
     },
   ]);
   const [previewHtml, setPreviewHtml] = React.useState("");
-  const [showPreview, setShowPreview] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(false);
 
   React.useEffect(() => {
     const formData = {
@@ -40,7 +38,7 @@ function App() {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         // Automatically revert to split view on larger screens
-        setShowPreview(false);
+        setIsMobile(false);
       }
     };
 
@@ -53,28 +51,22 @@ function App() {
 
   return (
     <>
-      <Header previewHtml={previewHtml} />
-      {!showPreview ? (
+      <Header
+        previewHtml={previewHtml}
+        isMobile={isMobile}
+        setIsMobile={setIsMobile}
+      />
+      {!isMobile ? (
         // Editor Section
         <div
-          className="flex flex-col md:flex-row w-full h-screen bg-white"
+          className="flex lg:flex-row w-full h-screen bg-white"
           style={{
             height: "calc(100vh - env(safe-area-inset-bottom))",
             paddingBottom: "env(safe-area-inset-bottom)",
           }}
         >
           {/* Left Section: Editor */}
-          <div className="w-full md:w-1/2 p-6 overflow-y-auto border-r">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-lg font-semibold">Newsletter Editor</h2>
-              <Button
-                onClick={() => setShowPreview(true)}
-                className="md:hidden"
-              >
-                <Eye />
-                Show Preview
-              </Button>
-            </div>
+          <div className="w-full lg:w-1/2 px-8 py-8 overflow-y-auto border-r">
             <Editor
               month={month}
               setMonth={setMonth}
@@ -86,23 +78,13 @@ function App() {
           </div>
 
           {/* Right Section: Preview (hidden on mobile) */}
-          <div className="hidden md:block w-1/2 p-6 overflow-y-auto bg-gray-50">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-lg font-semibold">Email Preview</h2>
-            </div>
+          <div className="hidden lg:block w-1/2 p-6 overflow-y-auto bg-gray-50">
             <Preview previewHtml={previewHtml} />
           </div>
         </div>
       ) : (
         // Fullscreen Preview Section
         <div className="w-full h-screen p-6 overflow-y-auto bg-gray-50">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-lg font-semibold">Email Preview</h2>
-            <Button onClick={() => setShowPreview(false)} className="md:hidden">
-              <Pencil />
-              Back to Editor
-            </Button>
-          </div>
           <Preview previewHtml={previewHtml} />
         </div>
       )}
