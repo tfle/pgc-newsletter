@@ -50,21 +50,17 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col space-y-16 h-screen">
+      {/* Header */}
       <Header
         previewHtml={previewHtml}
         isMobile={isMobile}
         setIsMobile={setIsMobile}
       />
+
+      {/* Main Content */}
       {!isMobile ? (
-        // Editor Section
-        <div
-          className="flex lg:flex-row w-full h-screen bg-white"
-          style={{
-            height: "calc(100vh - env(safe-area-inset-bottom))",
-            paddingBottom: "env(safe-area-inset-bottom)",
-          }}
-        >
+        <div className="flex flex-row w-full h-full">
           {/* Left Section: Editor */}
           <div className="w-full lg:w-1/2 px-8 py-8 overflow-y-auto border-r">
             <Editor
@@ -77,7 +73,7 @@ function App() {
             />
           </div>
 
-          {/* Right Section: Preview (hidden on mobile) */}
+          {/* Right Section: Preview */}
           <div className="hidden lg:block w-1/2 p-6 overflow-y-auto bg-gray-50">
             <Preview previewHtml={previewHtml} />
           </div>
@@ -88,7 +84,7 @@ function App() {
           <Preview previewHtml={previewHtml} />
         </div>
       )}
-    </>
+    </div>
   );
 }
 
