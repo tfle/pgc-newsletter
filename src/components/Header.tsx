@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Eye, EyeOff, Newspaper } from "lucide-react";
 import React from "react";
-
-//Editor> Save progress, Upload saved, Load Example?
-//Preview> View as Desktop, View as Mobile, Download HTML
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 interface HeaderProps {
   previewHtml: string;
@@ -12,6 +22,8 @@ interface HeaderProps {
 }
 
 export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
+  const [checked, setChecked] = React.useState(true);
+
   const downloadHtml = () => {
     const blob = new Blob([previewHtml], { type: "text/html" });
     const url = URL.createObjectURL(blob);
@@ -26,10 +38,52 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
   return (
     <div className="sticky top-0 bg-white border-b z-50 px-8 py-4">
       <div className="flex items-center justify-between">
-        <Button variant="outline">
-          <Newspaper />
-          PGC Newsletter
-        </Button>
+        <Menubar>
+          <MenubarMenu>
+            <MenubarTrigger>
+              <Newspaper size={16} className="mr-2" />
+              PGC Newsletter
+            </MenubarTrigger>
+            <MenubarContent>
+              <MenubarSub>
+                <MenubarSubTrigger>Open</MenubarSubTrigger>
+                <MenubarSubContent>
+                  <MenubarItem>
+                    Form JSON...<MenubarShortcut>⌘O</MenubarShortcut>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                  <MenubarItem>Example Newsletter</MenubarItem>
+                </MenubarSubContent>
+              </MenubarSub>
+              <MenubarItem>
+                Save Form...<MenubarShortcut>⌘S</MenubarShortcut>
+              </MenubarItem>
+              <MenubarSeparator />
+              <MenubarItem onClick={downloadHtml}>
+                Export Newsletter...
+              </MenubarItem>
+              <MenubarSub>
+                <MenubarSubTrigger>Preview Settings</MenubarSubTrigger>
+                <MenubarSubContent>
+                  <MenubarCheckboxItem
+                    checked={checked}
+                    onCheckedChange={setChecked}
+                  >
+                    Always Show Desktop Preview
+                  </MenubarCheckboxItem>
+                  <MenubarCheckboxItem
+                    checked={checked}
+                    onCheckedChange={setChecked}
+                  >
+                    Always Show Mobile Preview
+                  </MenubarCheckboxItem>
+                </MenubarSubContent>
+              </MenubarSub>
+              <MenubarSeparator />
+              <MenubarItem>Clear Form...</MenubarItem>
+            </MenubarContent>
+          </MenubarMenu>
+        </Menubar>
         <Button variant="outline" onClick={() => setIsMobile((prev) => !prev)}>
           {isMobile ? <EyeOff /> : <Eye />}
           Preview
