@@ -7,7 +7,7 @@ export interface Highlight {
 }
 
 export interface FormData {
-  month: string;
+  title: string;
   presidentMessage: string;
   highlights: Highlight[];
 }

@@ -94,9 +94,9 @@ export function generateMJML(formData: FormData): string {
         <mj-font name="itc-avant-garde-gothic-pro" href="https://use.typekit.net/ydl4elm.css"/>
         <mj-attributes>
           <mj-all font-family="itc-avant-garde-gothic-pro, sans-serif" font-weight="300"/>
-          <mj-class name="section-heading" font-weight="700" font-size="22px" color="#ec881d" line-height="1.2"/>
+          <mj-class name="section-heading" font-weight="700" font-size="22px" color="#ec881d" line-height="1.2""/>
           <mj-class name="heading" font-weight="500" font-size="22px" color="#081d23" line-height="1.2"/>
-          <mj-class name="body" font-weight="300" font-size="16px" color="#444d3e" line-height="1.6"/>
+          <mj-class name="body" font-weight="300" font-size="16px" color="#444d3e" line-height="1.6" padding-top="0"/>
           <mj-section padding="0"/>
           <mj-column padding-bottom="5px"/>
         </mj-attributes>
@@ -128,17 +128,20 @@ export function generateMJML(formData: FormData): string {
     
         <mj-section>
           <mj-column>
-            <mj-text mj-class="section-heading">${formData.month} PGC Newsletter</mj-text>
+            <mj-text mj-class="section-heading">${formData.title}</mj-text>
           </mj-column>
         </mj-section>
     
         <mj-section>
           <mj-column>
             <mj-text mj-class="body">
-              ${formData.presidentMessage}
+              ${formData.presidentMessage
+                .split("\n")
+                .map((line) => `<p>${line}</p>`)
+                .join("")}
               <p>
-                <strong>Tony Le</strong><br/>
-                2024 PGC President
+                <strong>Ada Choi</strong><br/>
+                2025 PGC President
               </p>
             </mj-text>
           </mj-column>

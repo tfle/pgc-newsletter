@@ -10,8 +10,8 @@ import { ArrowDown, ArrowUp, Plus, Star, Trash2 } from "lucide-react";
 import React from "react";
 
 interface EditorProps {
-  month: string;
-  setMonth: React.Dispatch<React.SetStateAction<string>>;
+  title: string;
+  setTitle: React.Dispatch<React.SetStateAction<string>>;
   presidentMessage: string;
   setPresidentMessage: React.Dispatch<React.SetStateAction<string>>;
   highlights: Highlight[];
@@ -19,8 +19,8 @@ interface EditorProps {
 }
 
 export const Editor = ({
-  month,
-  setMonth,
+  title,
+  setTitle,
   presidentMessage,
   setPresidentMessage,
   highlights,
@@ -32,12 +32,12 @@ export const Editor = ({
     <>
       <div className="space-y-6">
         <div>
-          <Label htmlFor="newsletterMonth">Newsletter Month</Label>
+          <Label htmlFor="title">Title</Label>
           <Input
             type="text"
-            placeholder="e.g. January"
-            value={month}
-            onChange={(e) => setMonth(e.target.value)}
+            placeholder="e.g. January PGC Newsletter"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
         <div>

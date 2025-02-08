@@ -7,7 +7,7 @@ import mjml2html from "mjml-browser";
 import React from "react";
 
 function App() {
-  const [month, setMonth] = React.useState("");
+  const [title, setTitle] = React.useState("");
   const [presidentMessage, setPresidentMessage] = React.useState("");
   const [highlights, setHighlights] = React.useState<Highlight[]>([
     {
@@ -23,7 +23,7 @@ function App() {
 
   React.useEffect(() => {
     const formData = {
-      month,
+      title,
       presidentMessage,
       highlights,
     };
@@ -31,7 +31,7 @@ function App() {
     const mjmlString = generateMJML(formData);
     const { html } = mjml2html(mjmlString);
     setPreviewHtml(html);
-  }, [month, presidentMessage, highlights]);
+  }, [title, presidentMessage, highlights]);
 
   // Resize listener to reset the "editor/preview" view
   React.useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col space-y-16 h-screen">
+    <div className="flex h-screen flex-col space-y-16">
       {/* Header */}
       <Header
         previewHtml={previewHtml}
@@ -60,12 +60,12 @@ function App() {
 
       {/* Main Content */}
       {!isMobile ? (
-        <div className="flex flex-row w-full h-full">
+        <div className="flex h-full w-full flex-row">
           {/* Left Section: Editor */}
-          <div className="w-full lg:w-1/2 px-8 py-8 overflow-y-auto border-r">
+          <div className="w-full overflow-y-auto border-r px-8 py-8 lg:w-1/2">
             <Editor
-              month={month}
-              setMonth={setMonth}
+              title={title}
+              setTitle={setTitle}
               presidentMessage={presidentMessage}
               setPresidentMessage={setPresidentMessage}
               highlights={highlights}
@@ -74,13 +74,13 @@ function App() {
           </div>
 
           {/* Right Section: Preview */}
-          <div className="hidden lg:block w-1/2 p-6 overflow-y-auto bg-gray-50">
+          <div className="hidden w-1/2 overflow-y-auto bg-gray-50 p-6 lg:block">
             <Preview previewHtml={previewHtml} />
           </div>
         </div>
       ) : (
         // Fullscreen Preview Section
-        <div className="w-full h-screen p-6 overflow-y-auto bg-gray-50">
+        <div className="h-screen w-full overflow-y-auto bg-gray-50 p-6">
           <Preview previewHtml={previewHtml} />
         </div>
       )}
