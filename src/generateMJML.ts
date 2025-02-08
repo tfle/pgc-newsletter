@@ -1,4 +1,4 @@
-import { Highlight, FormData } from "@/types";
+import { FormData, Highlight } from "@/types";
 
 const DEFAULT_IMAGE = "https://dummyimage.com/1920x1080/ec881d/fff";
 

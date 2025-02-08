@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Eye, EyeOff, Newspaper } from "lucide-react";
-import React from "react";
 import {
   Menubar,
   MenubarCheckboxItem,
@@ -14,6 +12,8 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import { Eye, EyeOff, Newspaper } from "lucide-react";
+import React from "react";
 
 interface HeaderProps {
   previewHtml: string;
@@ -36,7 +36,7 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 z-50 w-full h-16 bg-white border-b px-8 flex items-center justify-between">
+    <div className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between border-b bg-white px-8">
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>

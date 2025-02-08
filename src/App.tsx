@@ -1,10 +1,10 @@
-import React from "react";
-import mjml2html from "mjml-browser";
-import { generateMJML } from "@/generateMJML";
 import { Editor } from "@/components/Editor";
 import { Header } from "@/components/Header";
 import { Preview } from "@/components/Preview";
+import { generateMJML } from "@/generateMJML";
 import { Highlight } from "@/types";
+import mjml2html from "mjml-browser";
+import React from "react";
 
 function App() {
   const [month, setMonth] = React.useState("");

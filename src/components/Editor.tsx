@@ -1,5 +1,3 @@
-import React from "react";
-import { ArrowDown, ArrowUp, Plus, Star, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -8,6 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Toggle } from "@/components/ui/toggle";
 import { createHighlightActions } from "@/createHighlightActions";
 import { Highlight } from "@/types";
+import { ArrowDown, ArrowUp, Plus, Star, Trash2 } from "lucide-react";
+import React from "react";
 
 interface EditorProps {
   month: string;
@@ -51,7 +51,7 @@ export const Editor = ({
 
         {/* Highlights */}
         <div className="space-y-4">
-          <div className="flex justify-between items-center">
+          <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold">Highlights</h2>
             <Button
               onClick={highlightActions.addHighlight}
@@ -68,7 +68,7 @@ export const Editor = ({
             <Card key={index} className="bg-gray-50">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle>
-                  <span className="text-gray-500 mr-2">#{index + 1}</span>{" "}
+                  <span className="mr-2 text-gray-500">#{index + 1}</span>{" "}
                   {highlight.title || "Untitled"}
                 </CardTitle>
                 <div className="flex gap-2">
