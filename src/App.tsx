@@ -8,6 +8,7 @@ import React from "react";
 
 function App() {
   const [title, setTitle] = React.useState("");
+  const [subtitle, setSubtitle] = React.useState("");
   const [presidentMessage, setPresidentMessage] = React.useState("");
   const [highlights, setHighlights] = React.useState<Highlight[]>([
     {
@@ -24,6 +25,7 @@ function App() {
   React.useEffect(() => {
     const formData = {
       title,
+      subtitle,
       presidentMessage,
       highlights,
     };
@@ -31,7 +33,7 @@ function App() {
     const mjmlString = generateMJML(formData);
     const { html } = mjml2html(mjmlString);
     setPreviewHtml(html);
-  }, [title, presidentMessage, highlights]);
+  }, [title, subtitle, presidentMessage, highlights]);
 
   // Resize listener to reset the "editor/preview" view
   React.useEffect(() => {
@@ -62,10 +64,12 @@ function App() {
       {!isMobile ? (
         <div className="flex h-full w-full flex-row">
           {/* Left Section: Editor */}
-          <div className="w-full overflow-y-auto border-r px-8 py-8 lg:w-1/2">
+          <div className="w-full overflow-y-auto border-r p-8 lg:w-1/2">
             <Editor
               title={title}
               setTitle={setTitle}
+              subtitle={subtitle}
+              setSubtitle={setSubtitle}
               presidentMessage={presidentMessage}
               setPresidentMessage={setPresidentMessage}
               highlights={highlights}
@@ -74,13 +78,13 @@ function App() {
           </div>
 
           {/* Right Section: Preview */}
-          <div className="hidden w-1/2 overflow-y-auto bg-gray-50 p-6 lg:block">
+          <div className="hidden w-1/2 overflow-y-auto bg-gray-50 p-8 lg:block">
             <Preview previewHtml={previewHtml} />
           </div>
         </div>
       ) : (
         // Fullscreen Preview Section
-        <div className="h-screen w-full overflow-y-auto bg-gray-50 p-6">
+        <div className="h-screen w-full overflow-y-auto bg-gray-50 p-8">
           <Preview previewHtml={previewHtml} />
         </div>
       )}

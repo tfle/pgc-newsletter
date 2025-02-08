@@ -135,6 +135,7 @@ export function generateMJML(formData: FormData): string {
         <mj-section>
           <mj-column>
             <mj-text mj-class="body">
+              <p><strong>${formData.subtitle}</strong></p>
               ${formData.presidentMessage
                 .split("\n")
                 .map((line) => `<p>${line}</p>`)

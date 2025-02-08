@@ -12,6 +12,8 @@ import React from "react";
 interface EditorProps {
   title: string;
   setTitle: React.Dispatch<React.SetStateAction<string>>;
+  subtitle: string;
+  setSubtitle: React.Dispatch<React.SetStateAction<string>>;
   presidentMessage: string;
   setPresidentMessage: React.Dispatch<React.SetStateAction<string>>;
   highlights: Highlight[];
@@ -21,6 +23,8 @@ interface EditorProps {
 export const Editor = ({
   title,
   setTitle,
+  subtitle,
+  setSubtitle,
   presidentMessage,
   setPresidentMessage,
   highlights,
@@ -38,6 +42,15 @@ export const Editor = ({
             placeholder="e.g. January PGC Newsletter"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div>
+          <Label htmlFor="subtitle">Subtitle</Label>
+          <Input
+            type="text"
+            placeholder="e.g. Welcome to T1"
+            value={subtitle}
+            onChange={(e) => setSubtitle(e.target.value)}
           />
         </div>
         <div>
