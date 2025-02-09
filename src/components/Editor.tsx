@@ -1,4 +1,15 @@
-import { Badge } from "@/components/ui/badge.tsx";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -162,13 +173,31 @@ export const Editor = ({
               }
             />
             <CardFooter className="flex justify-end p-0">
-              <Button
-                size="icon"
-                onClick={() => highlightActions.removeHighlight(index)}
-                variant="outline"
-              >
-                <Trash2 />
-              </Button>
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button size="icon" variant="outline">
+                    <Trash2 />
+                  </Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>
+                      Delete Highlight {index + 1}?
+                    </AlertDialogTitle>
+                    <AlertDialogDescription>
+                      This action is permanent and cannot be undone.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction
+                      onClick={() => highlightActions.removeHighlight(index)}
+                    >
+                      Continue
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
             </CardFooter>
           </CardContent>
         </Card>
