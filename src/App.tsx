@@ -16,7 +16,7 @@ function App() {
       description: "",
       imageUrl: "",
       link: "",
-      featured: false,
+      featured: true,
     },
   ]);
   const [previewHtml, setPreviewHtml] = React.useState("");
@@ -52,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex h-screen flex-col space-y-16">
+    <div className="flex h-screen space-y-16">
       {/* Header */}
       <Header
         previewHtml={previewHtml}
@@ -62,9 +62,9 @@ function App() {
 
       {/* Main Content */}
       {!isMobile ? (
-        <div className="flex h-full w-full flex-row">
+        <div className="flex h-full w-full">
           {/* Left Section: Editor */}
-          <div className="w-full overflow-y-auto border-r p-8 lg:w-1/2">
+          <div className="w-full space-y-4 overflow-y-auto border-r p-8 lg:w-1/2">
             <Editor
               title={title}
               setTitle={setTitle}
