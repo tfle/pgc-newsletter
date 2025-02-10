@@ -1,4 +1,19 @@
+const DEFAULT_FILENAME = `pgc-newsletter-${new Date().toISOString().split("T")[0]}.html`;
+
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Menubar,
   MenubarCheckboxItem,
@@ -23,14 +38,23 @@ interface HeaderProps {
 
 export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
   const [checked, setChecked] = React.useState(true);
+  const [filename, setFilename] = React.useState(DEFAULT_FILENAME);
 
   const downloadHtml = () => {
     const blob = new Blob([previewHtml], { type: "text/html" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
-    const date = new Date().toISOString().split("T")[0];
     link.href = url;
-    link.download = `pgc-newsletter-${date}.html`;
+
+    if (filename && filename.endsWith(".html")) {
+      link.download = filename;
+    } else if (filename) {
+      link.download = `${filename}.html`;
+    } else {
+      link.download = DEFAULT_FILENAME;
+    }
+
+    setFilename(DEFAULT_FILENAME);
     link.click();
     URL.revokeObjectURL(url);
   };
@@ -58,9 +82,39 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
               Save Form...<MenubarShortcut>⌘S</MenubarShortcut>
             </MenubarItem>
             <MenubarSeparator />
-            <MenubarItem onClick={downloadHtml}>
-              Export Newsletter...
-            </MenubarItem>
+
+            {/* Export Newsletter */}
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <MenubarItem onSelect={(e) => e.preventDefault()}>
+                  Export Newsletter...
+                </MenubarItem>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Export Newsletter</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Export the newsletter as an HTML file.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <div>
+                  <Label htmlFor="filename">Filename</Label>
+                  <Input
+                    id="filename"
+                    type="text"
+                    value={filename}
+                    onChange={(e) => setFilename(e.target.value)}
+                  />
+                </div>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={downloadHtml}>
+                    Export
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+
             <MenubarSub>
               <MenubarSubTrigger>Preview Settings</MenubarSubTrigger>
               <MenubarSubContent>
