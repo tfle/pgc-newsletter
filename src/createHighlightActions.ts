@@ -36,6 +36,9 @@ export const createHighlightActions = (
     if (index === 0) return; // Can't move the first item up
     const newHighlights = [...highlights];
     const [removed] = newHighlights.splice(index, 1);
+    if (index - 1 === 0) {
+      newHighlights[0].featured = false; // Remove featured status from the previous first highlight
+    }
     newHighlights.splice(index - 1, 0, removed); // Insert it before the previous item
     setHighlights(newHighlights);
   };
