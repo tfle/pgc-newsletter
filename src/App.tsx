@@ -55,6 +55,14 @@ function App() {
     <div className="flex h-screen space-y-16">
       {/* Header */}
       <Header
+        title={title}
+        setTitle={setTitle}
+        subtitle={subtitle}
+        setSubtitle={setSubtitle}
+        presidentMessage={presidentMessage}
+        setPresidentMessage={setPresidentMessage}
+        highlights={highlights}
+        setHighlights={setHighlights}
         previewHtml={previewHtml}
         isMobile={isMobile}
         setIsMobile={setIsMobile}

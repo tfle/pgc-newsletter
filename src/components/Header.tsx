@@ -1,4 +1,4 @@
-const DEFAULT_FILENAME = `pgc-newsletter-${new Date().toISOString().split("T")[0]}.html`;
+const DEFAULT_FILENAME = `pgc-newsletter-${new Date().toISOString().split("T")[0]}`;
 
 import {
   AlertDialog,
@@ -27,16 +27,37 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import { Highlight } from "@/types.ts";
 import { Eye, EyeOff, Newspaper } from "lucide-react";
 import React from "react";
 
 interface HeaderProps {
+  title: string;
+  setTitle: React.Dispatch<React.SetStateAction<string>>;
+  subtitle: string;
+  setSubtitle: React.Dispatch<React.SetStateAction<string>>;
+  presidentMessage: string;
+  setPresidentMessage: React.Dispatch<React.SetStateAction<string>>;
+  highlights: Highlight[];
+  setHighlights: React.Dispatch<React.SetStateAction<Highlight[]>>;
   previewHtml: string;
   isMobile: boolean;
   setIsMobile: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
+export const Header = ({
+  title,
+  setTitle,
+  subtitle,
+  setSubtitle,
+  presidentMessage,
+  setPresidentMessage,
+  highlights,
+  setHighlights,
+  previewHtml,
+  isMobile,
+  setIsMobile,
+}: HeaderProps) => {
   const [checked, setChecked] = React.useState(true);
   const [filename, setFilename] = React.useState(DEFAULT_FILENAME);
 
@@ -51,12 +72,49 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
     } else if (filename) {
       link.download = `${filename}.html`;
     } else {
-      link.download = DEFAULT_FILENAME;
+      link.download = `${DEFAULT_FILENAME}.html`;
     }
 
     setFilename(DEFAULT_FILENAME);
     link.click();
     URL.revokeObjectURL(url);
+  };
+
+  const downloadJson = () => {
+    const blob = new Blob(
+      [JSON.stringify({ title, subtitle, presidentMessage, highlights })],
+      { type: "application/json" },
+    );
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+
+    if (filename && filename.endsWith(".json")) {
+      link.download = filename;
+    } else if (filename) {
+      link.download = `${filename}.json`;
+    } else {
+      link.download = `${DEFAULT_FILENAME}.json`;
+    }
+
+    setFilename(DEFAULT_FILENAME);
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const resetForm = () => {
+    setTitle("");
+    setSubtitle("");
+    setPresidentMessage("");
+    setHighlights([
+      {
+        title: "",
+        description: "",
+        imageUrl: "",
+        link: "",
+        featured: true,
+      },
+    ]);
   };
 
   return (
@@ -78,9 +136,44 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
                 <MenubarItem>Example Newsletter</MenubarItem>
               </MenubarSubContent>
             </MenubarSub>
-            <MenubarItem>
-              Save Form...<MenubarShortcut>⌘S</MenubarShortcut>
-            </MenubarItem>
+
+            {/* Save Form */}
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <MenubarItem onSelect={(e) => e.preventDefault()}>
+                  Save Form...
+                </MenubarItem>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Save Form</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Save your form progress as a JSON file to continue editing
+                    later.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <div>
+                  <Label htmlFor="filename">Filename</Label>
+                  <Input
+                    id="filename"
+                    type="text"
+                    value={filename}
+                    onChange={(e) => setFilename(e.target.value)}
+                  />
+                </div>
+                <AlertDialogFooter>
+                  <AlertDialogCancel
+                    onClick={() => setFilename(DEFAULT_FILENAME)}
+                  >
+                    Cancel
+                  </AlertDialogCancel>
+                  <AlertDialogAction onClick={downloadJson}>
+                    Save
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+
             <MenubarSeparator />
 
             {/* Export Newsletter */}
@@ -107,7 +200,11 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
                   />
                 </div>
                 <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogCancel
+                    onClick={() => setFilename(DEFAULT_FILENAME)}
+                  >
+                    Cancel
+                  </AlertDialogCancel>
                   <AlertDialogAction onClick={downloadHtml}>
                     Export
                   </AlertDialogAction>
@@ -133,7 +230,29 @@ export const Header = ({ previewHtml, isMobile, setIsMobile }: HeaderProps) => {
               </MenubarSubContent>
             </MenubarSub>
             <MenubarSeparator />
-            <MenubarItem>Clear Form...</MenubarItem>
+
+            {/* Reset Form */}
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <MenubarItem onSelect={(e) => e.preventDefault()}>
+                  Reset Form...
+                </MenubarItem>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Reset all form fields?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    This action is permanent and cannot be undone.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={resetForm}>
+                    Reset
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
