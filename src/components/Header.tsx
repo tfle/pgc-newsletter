@@ -1,5 +1,6 @@
 const DEFAULT_FILENAME = `pgc-newsletter-${new Date().toISOString().split("T")[0]}`;
 
+import exampleNewsletter from "@/assets/exampleNewsletter.json";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -135,6 +136,13 @@ export const Header = ({
     }
   };
 
+  const loadExample = async () => {
+    setTitle(exampleNewsletter.title);
+    setSubtitle(exampleNewsletter.subtitle);
+    setPresidentMessage(exampleNewsletter.presidentMessage);
+    setHighlights(exampleNewsletter.highlights);
+  };
+
   return (
     <div className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between border-b bg-white px-8">
       <Menubar>
@@ -175,7 +183,9 @@ export const Header = ({
                 </AlertDialog>
 
                 <MenubarSeparator />
-                <MenubarItem>Example Newsletter</MenubarItem>
+                <MenubarItem onClick={loadExample}>
+                  Example Newsletter
+                </MenubarItem>
               </MenubarSubContent>
             </MenubarSub>
 

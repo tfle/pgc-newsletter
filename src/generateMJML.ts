@@ -144,8 +144,8 @@ export function generateMJML(formData: FormData): string {
                 .map((line) => `<p>${line}</p>`)
                 .join("")}
               <p>
-                <strong>Ada Choi</strong><br/>
-                2025 PGC President
+                <strong>Tony Le</strong><br/>
+                2024 PGC President
               </p>
             </mj-text>
           </mj-column>
