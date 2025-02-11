@@ -21,7 +21,6 @@ import {
   MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
   MenubarSub,
   MenubarSubContent,
   MenubarSubTrigger,
@@ -117,6 +116,24 @@ export const Header = ({
     ]);
   };
 
+  const uploadJson = () => {
+    const input = document.getElementById("jsonFile") as HTMLInputElement;
+    const file = input?.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        if (event.target?.result) {
+          const data = JSON.parse(event.target.result as string);
+          setTitle(data.title);
+          setSubtitle(data.subtitle);
+          setPresidentMessage(data.presidentMessage);
+          setHighlights(data.highlights);
+        }
+      };
+      reader.readAsText(file);
+    }
+  };
+
   return (
     <div className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between border-b bg-white px-8">
       <Menubar>
@@ -129,9 +146,33 @@ export const Header = ({
             <MenubarSub>
               <MenubarSubTrigger>Open</MenubarSubTrigger>
               <MenubarSubContent>
-                <MenubarItem>
-                  Form JSON...<MenubarShortcut>⌘O</MenubarShortcut>
-                </MenubarItem>
+                {/* Open Form */}
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <MenubarItem onSelect={(e) => e.preventDefault()}>
+                      JSON Form...
+                    </MenubarItem>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent>
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>Open JSON Form</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        Open a previously saved JSON form to continue editing.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <div>
+                      <Label htmlFor="jsonFile">Saved JSON Form</Label>
+                      <Input id="jsonFile" type="file" accept=".json" />
+                    </div>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogAction onClick={uploadJson}>
+                        Open
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+
                 <MenubarSeparator />
                 <MenubarItem>Example Newsletter</MenubarItem>
               </MenubarSubContent>
