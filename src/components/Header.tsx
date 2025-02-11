@@ -17,7 +17,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
   Menubar,
-  MenubarCheckboxItem,
   MenubarContent,
   MenubarItem,
   MenubarMenu,
@@ -264,6 +263,8 @@ export const Header = ({
               </AlertDialogContent>
             </AlertDialog>
 
+            {/* TODO: Preview Settings
+
             <MenubarSub>
               <MenubarSubTrigger>Preview Settings</MenubarSubTrigger>
               <MenubarSubContent>
@@ -281,6 +282,9 @@ export const Header = ({
                 </MenubarCheckboxItem>
               </MenubarSubContent>
             </MenubarSub>
+
+            */}
+
             <MenubarSeparator />
 
             {/* Reset Form */}
