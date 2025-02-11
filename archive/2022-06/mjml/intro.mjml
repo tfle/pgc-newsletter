@@ -1,8 +1,0 @@
-<mj-section padding-bottom="0px" background-color="#fcfcfc">
-  <mj-column>
-    <mj-text align="center" font-size="20px" color="rgb(165, 176, 184)">
-      Catch up on the latest from our committees
-    </mj-text>
-    <mj-divider padding-top="20px" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#f8f8f8" />
-  </mj-column>
-</mj-section>
