@@ -21,6 +21,7 @@ export const createHighlightActions = (
       description: "",
       imageUrl: "",
       link: "",
+      dateTime: "",
       featured: false,
     });
     setHighlights(newHighlights);

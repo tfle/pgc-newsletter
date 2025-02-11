@@ -172,6 +172,18 @@ export const Editor = ({
                 highlightActions.updateHighlight(index, "link", e.target.value)
               }
             />
+            <Input
+              type="text"
+              placeholder="Date and time"
+              value={highlight.dateTime}
+              onChange={(e) =>
+                highlightActions.updateHighlight(
+                  index,
+                  "dateTime",
+                  e.target.value,
+                )
+              }
+            />
             <CardFooter className="flex justify-end p-0">
               <AlertDialog>
                 <AlertDialogTrigger asChild>

@@ -24,6 +24,7 @@ export function generateMJML(formData: FormData): string {
           </mj-text>
           <mj-text mj-class="body">
             ${featuredHighlight.description}
+            <p style="color:#ec881d">${featuredHighlight.dateTime}</p>
           </mj-text>
         </mj-column>
       </mj-section>
@@ -56,6 +57,7 @@ export function generateMJML(formData: FormData): string {
               </mj-text>
               <mj-text mj-class="body">
                 ${highlight.description}
+                <p style="color:#ec881d">${highlight.dateTime}</p>
               </mj-text>
             </mj-column>
             
@@ -76,6 +78,7 @@ export function generateMJML(formData: FormData): string {
                 </mj-text>
                 <mj-text mj-class="body">
                   ${nextHighlight.description}
+                  <p style="color:#ec881d">${nextHighlight.dateTime}</p>
                 </mj-text>
               </mj-column>
               `

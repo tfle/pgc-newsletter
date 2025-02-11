@@ -111,6 +111,7 @@ export const Header = ({
         description: "",
         imageUrl: "",
         link: "",
+        dateTime: "",
         featured: true,
       },
     ]);

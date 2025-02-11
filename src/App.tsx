@@ -16,6 +16,7 @@ function App() {
       description: "",
       imageUrl: "",
       link: "",
+      dateTime: "",
       featured: true,
     },
   ]);

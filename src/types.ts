@@ -3,6 +3,7 @@ export interface Highlight {
   description: string;
   imageUrl: string;
   link: string;
+  dateTime: string;
   featured: boolean;
 }
 
