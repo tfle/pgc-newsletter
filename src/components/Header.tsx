@@ -57,7 +57,6 @@ export const Header = ({
   isMobile,
   setIsMobile,
 }: HeaderProps) => {
-  const [checked, setChecked] = React.useState(true);
   const [filename, setFilename] = React.useState(DEFAULT_FILENAME);
 
   const downloadHtml = () => {
