@@ -69,3 +69,13 @@ pgc-newsletter/
 │   └── ...
 └── ...
 ```
+
+## Roadmap
+
+Ideas/tasks/features for the future:
+- [ ] Use local storage for saving form content
+- [ ] Form validation (required fields, character limits, URL validation)
+- [ ] Image handling (uploading images, resizing images)
+- [ ] Preview for desktop/mobile toggle
+- [ ] Debounce form changes and preview updates
+- [ ] Memoization for performance improvements
