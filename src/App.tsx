@@ -83,12 +83,12 @@ function App() {
                 setHighlights={setHighlights}
               />
             </section>
-            <section className="hidden w-1/2 overflow-y-auto bg-gray-50 p-8 lg:block">
+            <section className="hidden overflow-y-auto bg-gray-50 p-8 lg:block lg:w-1/2">
               <Preview previewHtml={previewHtml} />
             </section>
           </>
         ) : (
-          <section className="h-screen w-full overflow-y-auto bg-gray-50 p-8">
+          <section className="w-full overflow-y-auto bg-gray-50 p-8">
             <Preview previewHtml={previewHtml} />
           </section>
         )}
