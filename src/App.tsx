@@ -54,7 +54,6 @@ function App() {
 
   return (
     <div className="flex h-screen flex-col pt-16">
-      {/* Header */}
       <Header
         title={title}
         setTitle={setTitle}
@@ -69,34 +68,31 @@ function App() {
         setIsMobile={setIsMobile}
       />
 
-      {/* Main Content */}
-      {!isMobile ? (
-        <div className="flex h-full w-full">
-          {/* Left Section: Editor */}
-          <div className="w-full space-y-4 overflow-y-auto border-r p-8 lg:w-1/2">
-            <Editor
-              title={title}
-              setTitle={setTitle}
-              subtitle={subtitle}
-              setSubtitle={setSubtitle}
-              presidentMessage={presidentMessage}
-              setPresidentMessage={setPresidentMessage}
-              highlights={highlights}
-              setHighlights={setHighlights}
-            />
-          </div>
-
-          {/* Right Section: Preview */}
-          <div className="hidden w-1/2 overflow-y-auto bg-gray-50 p-8 lg:block">
+      <main className="flex h-full w-full">
+        {!isMobile ? (
+          <>
+            <section className="w-full space-y-4 overflow-y-auto border-r p-8 lg:w-1/2">
+              <Editor
+                title={title}
+                setTitle={setTitle}
+                subtitle={subtitle}
+                setSubtitle={setSubtitle}
+                presidentMessage={presidentMessage}
+                setPresidentMessage={setPresidentMessage}
+                highlights={highlights}
+                setHighlights={setHighlights}
+              />
+            </section>
+            <section className="hidden w-1/2 overflow-y-auto bg-gray-50 p-8 lg:block">
+              <Preview previewHtml={previewHtml} />
+            </section>
+          </>
+        ) : (
+          <section className="h-screen w-full overflow-y-auto bg-gray-50 p-8">
             <Preview previewHtml={previewHtml} />
-          </div>
-        </div>
-      ) : (
-        // Fullscreen Preview Section
-        <div className="h-screen w-full overflow-y-auto bg-gray-50 p-8">
-          <Preview previewHtml={previewHtml} />
-        </div>
-      )}
+          </section>
+        )}
+      </main>
     </div>
   );
 }

@@ -142,7 +142,7 @@ export const Header = ({
   };
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between border-b bg-white px-8">
+    <header className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-between border-b bg-white px-8">
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>
@@ -315,6 +315,6 @@ export const Header = ({
         {isMobile ? <EyeOff /> : <Eye />}
         Preview
       </Button>
-    </div>
+    </header>
   );
 };
