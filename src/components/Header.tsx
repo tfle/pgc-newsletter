@@ -40,8 +40,8 @@ interface HeaderProps {
   highlights: Highlight[];
   setHighlights: React.Dispatch<React.SetStateAction<Highlight[]>>;
   previewHtml: string;
-  isMobile: boolean;
-  setIsMobile: React.Dispatch<React.SetStateAction<boolean>>;
+  isPreviewVisible: boolean;
+  setIsPreviewVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const Header = ({
@@ -54,8 +54,8 @@ export const Header = ({
   highlights,
   setHighlights,
   previewHtml,
-  isMobile,
-  setIsMobile,
+  isPreviewVisible,
+  setIsPreviewVisible,
 }: HeaderProps) => {
   const [filename, setFilename] = React.useState(DEFAULT_FILENAME);
 
@@ -311,8 +311,11 @@ export const Header = ({
           </MenubarContent>
         </MenubarMenu>
       </Menubar>
-      <Button variant="outline" onClick={() => setIsMobile((prev) => !prev)}>
-        {isMobile ? <EyeOff /> : <Eye />}
+      <Button
+        variant="outline"
+        onClick={() => setIsPreviewVisible((prev) => !prev)}
+      >
+        {isPreviewVisible ? <EyeOff /> : <Eye />}
         Preview
       </Button>
     </header>
