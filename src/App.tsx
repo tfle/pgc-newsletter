@@ -53,7 +53,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex h-screen space-y-16">
+    <div className="flex h-screen flex-col pt-16">
       {/* Header */}
       <Header
         title={title}
