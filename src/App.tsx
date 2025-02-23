@@ -37,7 +37,7 @@ function App() {
   }, [title, subtitle, presidentMessage, highlights]);
 
   return (
-    <div className="flex h-screen flex-col pt-16">
+    <div className="flex h-dvh flex-col">
       <Header
         title={title}
         setTitle={setTitle}
@@ -52,7 +52,7 @@ function App() {
         setIsPreviewVisible={setIsPreviewVisible}
       />
 
-      <main className="flex h-full w-full">
+      <main className="flex h-full w-full pt-16">
         <section
           className={`w-full space-y-4 overflow-y-auto border-r p-8 lg:w-1/2 ${isPreviewVisible ? "hidden" : ""}`}
         >
